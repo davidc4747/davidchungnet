@@ -1,7 +1,18 @@
 
+import React from 'react';
+import {render} from 'react-dom';
+import Header from './components/header/header.js';
 
-import './src/styles/styles.css';
+import './styles/styles.css';
 
-// The we can Initialize the App here
+class App extends React.Component {
+  render () {
+    return (
+        <div>
+            <Header/>
+        </div>
+    );
+  }
+}
 
-console.log('dfd');
+render(<App/>, document.getElementById('root'));
