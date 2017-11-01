@@ -4,6 +4,7 @@ import {render} from 'react-dom';
 
 import './styles/styles.css';
 import Header from './components/header/header.js';
+import Portfolio from './components/portfolio/portfolio.js';
 
 
 class App extends React.Component {
@@ -11,9 +12,9 @@ class App extends React.Component {
     return (
         <div>
             <Header/>
-            <Protfolio/>
-            <Education/>
-            <ContactMe/>
+            <Portfolio/>
+            {/* <Education/> */}
+            {/* <ContactMe/> */}
         </div>
     );
   }

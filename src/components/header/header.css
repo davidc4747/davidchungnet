@@ -40,7 +40,7 @@
         display: inline-block;
 
         & + & {
-            margin-left: 13rem;
+            margin-left: 10rem;
         }
     }
 
