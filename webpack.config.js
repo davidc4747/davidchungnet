@@ -17,7 +17,6 @@ module.exports = {
             {
                 test: /\.js$/,
                 loader: "babel-loader",
-                //exclude: /node_modules/,
                 query: {
                     presets: ['es2015', 'react']
                 }
@@ -31,6 +30,7 @@ module.exports = {
                         loader: "postcss-loader",
                         options: {
                             plugins: [
+                                require("precss"),
                                 require("postcss-cssnext")
                             ]
                         }

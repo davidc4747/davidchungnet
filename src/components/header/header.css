@@ -3,4 +3,90 @@
     #Header
 \*=======================*/
 
-h1{ color: var(--highlight); }
+.header {
+    position: relative;
+    padding: 2.5rem 0;
+    margin-top: 2rem;
+
+    &__headshot {
+        border-radius: 5px;
+    }
+
+    &__name {
+        color: var(--highlight);
+        /* color: #2547AA; */
+
+        text-align: left;
+
+        font-size: 3.5rem;
+    }
+
+
+
+
+
+    /*------------------------*\
+        #Contact Bar
+    \*------------------------*/
+
+    &__contact {
+        background-color: #C8C8C8;
+        padding: 0.6rem 0;
+
+        overflow: hidden;
+    }
+    &__contact-item {
+        float: left;
+        display: inline-block;
+
+        & + & {
+            margin-left: 13rem;
+        }
+    }
+
+
+
+
+
+    /*------------------------*\
+        #Social Media
+    \*------------------------*/
+
+    &__social {
+        overflow: hidden;
+    }
+    &__social-item {
+        display: inline-block;
+        float: left;
+        font-size: 2rem;
+    }
+
+
+
+
+
+    /*------------------------*\
+        #Header Positioning
+    \*------------------------*/
+
+    &__headshot {
+        position: absolute;
+        top: 0;
+
+        width: 17%;
+        margin-left: 2%;
+    }
+    &__name {
+        margin-left: 21%;
+    }
+    &__contact {
+        padding-left: 21%;
+    }
+    &__social {
+        position: absolute;
+        top: 18%;
+        right: 3%;
+    }
+
+
+}

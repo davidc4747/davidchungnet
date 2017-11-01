@@ -1,15 +1,19 @@
 
 import React from 'react';
 import {render} from 'react-dom';
-import Header from './components/header/header.js';
 
 import './styles/styles.css';
+import Header from './components/header/header.js';
+
 
 class App extends React.Component {
   render () {
     return (
         <div>
             <Header/>
+            <Protfolio/>
+            <Education/>
+            <ContactMe/>
         </div>
     );
   }

@@ -1,0 +1,25 @@
+
+/*=======================*\
+    #General Styling
+\*=======================*/
+
+#root {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/*=======================*\
+    #Helper classes
+\*=======================*/
+
+.list-unstyled {
+    list-style-type: none;
+}
+
+.icon {
+    margin: 0.4rem 0.3rem;
+}

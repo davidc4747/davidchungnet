@@ -1,6 +1,6 @@
 
 /*=======================*\
-    #Base Styling
+    #Base Elements
 \*=======================*/
 
 * {
@@ -9,6 +9,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #fbfbfb;
 }
 
 html {
@@ -28,16 +29,4 @@ h4,
 h5,
 h6 {
     margin: 0;
-}
-
-
-
-
-
-/*=======================*\
-    #Helper classes
-\*=======================*/
-
-.list-unstyled {
-    list-style-type: none;
 }
