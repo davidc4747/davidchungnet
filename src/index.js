@@ -12,7 +12,8 @@ class App extends React.Component {
     return (
         <div>
             <Header/>
-            <Portfolio/>
+            {/* <WorkExp/> */}
+            {/* <Portfolio/> */}
             {/* <Education/> */}
             {/* <ContactMe/> */}
         </div>
