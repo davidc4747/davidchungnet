@@ -4,6 +4,7 @@ import {render} from 'react-dom';
 
 import './styles/styles.css';
 import Header from './components/header/header.js';
+import WorkExp from './components/workexp/workexp.js';
 import Portfolio from './components/portfolio/portfolio.js';
 
 
@@ -12,7 +13,7 @@ class App extends React.Component {
     return (
         <div>
             <Header/>
-            {/* <WorkExp/> */}
+            <WorkExp/>
             {/* <Portfolio/> */}
             {/* <Education/> */}
             {/* <ContactMe/> */}
