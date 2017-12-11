@@ -1,15 +1,36 @@
 [
     {
-        "Name": "Adlez",
-        "Type": "Windows Game",
+        "name": "MathChallenge",
+        "type": "Website",
 
-        "DateStart": "2014-01-01",
-        "DateEnd": "2014-01-01",
+        "dateStart": "2014-01-01",
+        "dateEnd": "2014-01-01",
 
-        "Skils": [],
-        "Software": [],
-        "TeamSize": 6,
-        "Description": "sdsd dfds sdfef axz",
-        "Details": "sds"
+        "imgs": [
+            "./src/imgs/mathchallenge/pic1.png",
+            "./src/imgs/mathchallenge/pic2.png",
+            "./src/imgs/mathchallenge/pic3.png"
+        ],
+
+        "skills": [],
+        "software": [],
+        "teamSize": 1,
+        "description": "sdsd dfds sdfef axz",
+        "details": "sds"
+    },
+    {
+        "name": "Adlez",
+        "type": "Windows Game",
+
+        "dateStart": "2014-01-01",
+        "dateEnd": "2014-01-01",
+
+        "imgs": [],
+
+        "skills": [],
+        "software": [],
+        "teamSize": 6,
+        "description": "sdsd dfds sdfef axz",
+        "details": "sds"
     }
 ]
