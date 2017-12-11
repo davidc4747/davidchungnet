@@ -12,9 +12,9 @@ class App extends React.Component {
   render () {
     return (
         <div>
-            <Header/>
-            <WorkExp/>
-            {/* <Portfolio/> */}
+            <Header />
+            <WorkExp />
+            <Portfolio />
             {/* <Education/> */}
             {/* <ContactMe/> */}
         </div>

@@ -9,7 +9,6 @@ const WorkExp = () => (
         <div className="exp">
 
             <div className="exp__header">
-                {/* <img className="exp__img" src="https://yt3.ggpht.com/-PZTSw36MuQA/AAAAAAAAAAI/AAAAAAAAAAA/2Ugd_iOXjfc/s288-c-k-no-mo-rj-c0xffffff/photo.jpg" alt=""/> */}
                 <img className="exp__img" src="./src/imgs/pdhi/logo.jpg" alt=""/>
                 <h3 className="exp__title">
                     <div className="exp__company">PDHI</div>
@@ -60,8 +59,8 @@ const WorkExp = () => (
                 <li>Lead the initiative to convert our nested CSS structures into a modular BEM standard</li>
                 <li>Helped design and implement the initial stages of our Restful API</li>
                 <li>Created interactive charts using Google Maps API and D3.js</li>
-                <li>Saved debug time by creating SQL script to normalize test data</li>
-                <li>Helped reorganized enitity framework domain object structure</li>
+                <li>Saved debug time by creating SQL scripts to normalize test data</li>
+                <li>Helped reorganized entity framework domain object structure</li>
                 <li>Participated in regular agile team workflows</li>
             </ul>
         </div>
