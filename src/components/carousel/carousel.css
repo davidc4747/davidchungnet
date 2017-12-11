@@ -1,0 +1,97 @@
+
+@import "../../styles/variables";
+
+/*=======================*\
+    #Carousel
+\*=======================*/
+
+.carousel {
+
+
+    &__img-holder {
+        width: 100%;
+        height: 250px;
+
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    &__img {
+        width: 100%;
+
+        transform: scale(1.2);
+    }
+
+
+
+/*
+    &__track {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    &__img {
+        display: inline-block;
+        padding: 0.2rem 0;
+
+        width: 100%;
+
+        // transition: 0.35s all linear;
+    }
+*/
+
+
+
+
+    &__indicators {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__indicator {
+        border: 1px solid #fbfbfb;
+
+        width: 16px;
+        height: 16px;
+
+        cursor: pointer;
+        border-radius: 50%;
+
+        background-color: #000;
+        opacity: 0.25;
+
+        &:hover {
+            background-color: var(--highlight);
+            opacity: 0.8;
+        }
+
+
+        &--active {
+            background-color: var(--highlight);
+            opacity: 1;
+        }
+    }
+
+
+
+    &__controls {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__control--next,
+    &__control--prev {
+        cursor: pointer;
+
+        &:hover {
+            color: var(--highlight);
+        }
+    }
+    &__control--next {}
+    &__control--prev {}
+
+
+}

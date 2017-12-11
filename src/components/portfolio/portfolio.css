@@ -1,10 +1,17 @@
 
+@import "../../styles/variables.css";
+
 /*=======================*\
     #Portfolio
 \*=======================*/
 
 .portfolio {
-    display: flex;
+    // display: flex;
+
+    @media(min-width: 900px) {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
 
@@ -16,7 +23,30 @@
 \*=======================*/
 
 .project {
+    margin: 0.4rem;
+    padding: 0.2rem 0.3rem 0.4rem;
 
+    width: 33%;
+
+    border-radius: 3px;
+    text-align: center;
+    background-color: var(--grey);
+
+
+
+    &__carousel {
+        width: 100%;
+    }
+
+
+
+    &__title {
+        margin: 0.5rem 0;
+    }
+    &__sub-title {
+        font-weight: normal;
+        font-style: italic;
+    }
 }
 
 
@@ -31,6 +61,5 @@
     background-color: #fff;
 }
 
-.overlay-box{
-
+.overlay-box {
 }
