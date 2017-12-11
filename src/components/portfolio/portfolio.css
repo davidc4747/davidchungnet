@@ -22,11 +22,19 @@
     #Project
 \*=======================*/
 
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+
+
+    width: 100%;
+}
+
 .project {
     margin: 0.4rem;
     padding: 0.2rem 0.3rem 0.4rem;
 
-    width: 33%;
+    width: 23%;
 
     border-radius: 3px;
     text-align: center;

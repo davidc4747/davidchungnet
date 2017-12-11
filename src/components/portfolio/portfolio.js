@@ -14,14 +14,15 @@ class Portfolio extends Component {
       <section className="portfolio">
         <h2 className="title"><span className="icon fa fa-code"></span> Portfolio</h2>
 
-        <div className="project">
-          <Carousel className="project__carousel" imgs={projects[0].imgs} />
-          <h3 className="project__title">{projects[0].name}</h3>
-          <h3 className="project__sub-title">{projects[0].type}</h3>
-          {/* <ul className="project__details"></ul> */}
-
-
-
+        <div className="project-list">
+          {projects.map(project =>
+            <div className="project">
+              <Carousel className="project__carousel" imgs={project.imgs} />
+              <h3 className="project__title">{project.name}</h3>
+              <h3 className="project__sub-title">{project.type}</h3>
+              {/* <ul className="project__details"></ul> */}
+            </div>
+          )}
         </div>
 
 
