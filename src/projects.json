@@ -6,9 +6,9 @@
         "dateStart": "2016-06-01",
         "dateEnd": "2017-09-01",
 
-        "github": "N/A",
+        "github": "",
 
-        "thumbnail": "",
+        "thumbnail": "./src/imgs/pdhi/logo.jpg",
         "imgs": [
             "./src/imgs/pdhi/logo.jpg",
             "./src/imgs/pdhi/DonutChart-19.png",
@@ -35,7 +35,7 @@
 
         "github": "https://github.com/davidc4747/CareerClue",
 
-        "thumbnail": "",
+        "thumbnail": "./src/imgs/careerclue/pic (1).png",
         "imgs": [
             "./src/imgs/careerclue/pic (1).png",
             "./src/imgs/careerclue/pic (2).png",
@@ -64,7 +64,7 @@
 
         "github": "https://github.com/davidc4747/MathChallenge",
 
-        "thumbnail": "",
+        "thumbnail": "./src/imgs/mathchallenge/pic1.png",
         "imgs": [
             "./src/imgs/mathchallenge/pic1.png",
             "./src/imgs/mathchallenge/pic2.png",
@@ -104,7 +104,7 @@
 
         "github": "https://github.com/davidc4747/Robo",
 
-        "thumbnail": "",
+        "thumbnail": "http://placehold.it/300",
         "imgs": [
             "http://placehold.it/300"
         ],
@@ -127,7 +127,7 @@
 
         "github": "https://github.com/mdwyer223/CKBHorror2.0",
 
-        "thumbnail": "",
+        "thumbnail": "./src/imgs/ckb/Screenshot 2015-02-14 09.34.31.png",
         "imgs": [
             "./src/imgs/ckb/Screenshot 2015-02-14 09.34.31.png",
             "./src/imgs/ckb/Screenshot 2015-02-14 09.34.40.png",
@@ -155,7 +155,7 @@
 
         "github": "https://github.com/mdwyer223/BCATD",
 
-        "thumbnail": "",
+        "thumbnail": "./src/imgs/towdef/Screenshot 2015-02-14 09.50.47.png",
         "imgs": [
             "./src/imgs/towdef/Screenshot 2015-02-14 09.50.47.png",
             "./src/imgs/towdef/Screenshot 2015-02-14 09.52.41.png",
@@ -193,7 +193,7 @@
 
         "github": "https://github.com/mdwyer223/Fhysics",
 
-        "thumbnail": "",
+        "thumbnail": "./src/imgs/fhysics/Screenshot 2015-02-14 09.36.57.png",
         "imgs": [
             "./src/imgs/fhysics/Screenshot 2015-02-14 09.36.57.png",
             "./src/imgs/fhysics/Screenshot 2015-02-14 09.37.10.png",
@@ -239,7 +239,7 @@
 
         "github": "https://github.com/mdwyer223/SpecialTopics",
 
-        "thumbnail": "",
+        "thumbnail": "./src/imgs/adlez/Screenshot 2015-02-13 12.21.50.png",
         "imgs": [
             "./src/imgs/adlez/Screenshot 2015-02-13 12.21.50.png",
             "./src/imgs/adlez/Screenshot 2015-02-13 12.22.03.png",
@@ -274,7 +274,7 @@
 
         "github": "",
 
-        "thumbnail": "",
+        "thumbnail": "./src/imgs/mrspotswood/Screenshot 2014-12-25 00.14.36.png",
         "imgs": [
             "./src/imgs/mrspotswood/Screenshot 2014-12-25 00.14.36.png",
             "./src/imgs/mrspotswood/Screenshot 2014-12-25 00.17.00.png",
