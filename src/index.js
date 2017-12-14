@@ -6,6 +6,7 @@ import './styles/styles.css';
 import Header from './components/header/header.js';
 import WorkExp from './components/workexp/workexp.js';
 import Portfolio from './components/portfolio/portfolio.js';
+import Education from './components/education/education.js';
 
 
 class App extends React.Component {
@@ -15,7 +16,7 @@ class App extends React.Component {
             <Header />
             <WorkExp />
             <Portfolio />
-            {/* <Education/> */}
+            <Education />
             {/* <ContactMe/> */}
         </div>
     );

@@ -15,8 +15,8 @@ class Portfolio extends Component {
         <h2 className="title"><span className="icon fa fa-code"></span> Portfolio</h2>
 
         <div className="project-list">
-          {projects.map(project =>
-            <div className="project">
+          {projects.map((project, index) =>
+            <div className="project" key={index}>
               <Carousel className="project__carousel" imgs={project.imgs} />
               <h3 className="project__title">{project.name}</h3>
               <h3 className="project__sub-title">{project.type}</h3>

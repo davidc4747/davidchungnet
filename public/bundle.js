@@ -261,6 +261,20 @@ process.umask = function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
+/* WEBPACK VAR INJECTION */(function(process) {
+
+if (process.env.NODE_ENV === 'production') {
+  module.exports = __webpack_require__(18);
+} else {
+  module.exports = __webpack_require__(19);
+}
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
 
 
 /**
@@ -297,20 +311,6 @@ emptyFunction.thatReturnsArgument = function (arg) {
 };
 
 module.exports = emptyFunction;
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
-
-if (process.env.NODE_ENV === 'production') {
-  module.exports = __webpack_require__(18);
-} else {
-  module.exports = __webpack_require__(19);
-}
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
 /* 3 */
@@ -374,102 +374,6 @@ module.exports = invariant;
 
 /***/ }),
 /* 4 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/
-
-
-/* eslint-disable no-unused-vars */
-
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-
-function toObject(val) {
-	if (val === null || val === undefined) {
-		throw new TypeError('Object.assign cannot be called with null or undefined');
-	}
-
-	return Object(val);
-}
-
-function shouldUseNative() {
-	try {
-		if (!Object.assign) {
-			return false;
-		}
-
-		// Detect buggy property enumeration order in older V8 versions.
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-		var test1 = new String('abc'); // eslint-disable-line no-new-wrappers
-		test1[5] = 'de';
-		if (Object.getOwnPropertyNames(test1)[0] === '5') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test2 = {};
-		for (var i = 0; i < 10; i++) {
-			test2['_' + String.fromCharCode(i)] = i;
-		}
-		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
-			return test2[n];
-		});
-		if (order2.join('') !== '0123456789') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test3 = {};
-		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
-			test3[letter] = letter;
-		});
-		if (Object.keys(Object.assign({}, test3)).join('') !== 'abcdefghijklmnopqrst') {
-			return false;
-		}
-
-		return true;
-	} catch (err) {
-		// We don't expect any of the above to throw, but better to be safe.
-		return false;
-	}
-}
-
-module.exports = shouldUseNative() ? Object.assign : function (target, source) {
-	var from;
-	var to = toObject(target);
-	var symbols;
-
-	for (var s = 1; s < arguments.length; s++) {
-		from = Object(arguments[s]);
-
-		for (var key in from) {
-			if (hasOwnProperty.call(from, key)) {
-				to[key] = from[key];
-			}
-		}
-
-		if (getOwnPropertySymbols) {
-			symbols = getOwnPropertySymbols(from);
-			for (var i = 0; i < symbols.length; i++) {
-				if (propIsEnumerable.call(from, symbols[i])) {
-					to[symbols[i]] = from[symbols[i]];
-				}
-			}
-		}
-	}
-
-	return to;
-};
-
-/***/ }),
-/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -551,7 +455,7 @@ function toComment(sourceMap) {
 }
 
 /***/ }),
-/* 6 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -923,6 +827,102 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
+
+/* eslint-disable no-unused-vars */
+
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+var propIsEnumerable = Object.prototype.propertyIsEnumerable;
+
+function toObject(val) {
+	if (val === null || val === undefined) {
+		throw new TypeError('Object.assign cannot be called with null or undefined');
+	}
+
+	return Object(val);
+}
+
+function shouldUseNative() {
+	try {
+		if (!Object.assign) {
+			return false;
+		}
+
+		// Detect buggy property enumeration order in older V8 versions.
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
+		var test1 = new String('abc'); // eslint-disable-line no-new-wrappers
+		test1[5] = 'de';
+		if (Object.getOwnPropertyNames(test1)[0] === '5') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test2 = {};
+		for (var i = 0; i < 10; i++) {
+			test2['_' + String.fromCharCode(i)] = i;
+		}
+		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
+			return test2[n];
+		});
+		if (order2.join('') !== '0123456789') {
+			return false;
+		}
+
+		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
+		var test3 = {};
+		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
+			test3[letter] = letter;
+		});
+		if (Object.keys(Object.assign({}, test3)).join('') !== 'abcdefghijklmnopqrst') {
+			return false;
+		}
+
+		return true;
+	} catch (err) {
+		// We don't expect any of the above to throw, but better to be safe.
+		return false;
+	}
+}
+
+module.exports = shouldUseNative() ? Object.assign : function (target, source) {
+	var from;
+	var to = toObject(target);
+	var symbols;
+
+	for (var s = 1; s < arguments.length; s++) {
+		from = Object(arguments[s]);
+
+		for (var key in from) {
+			if (hasOwnProperty.call(from, key)) {
+				to[key] = from[key];
+			}
+		}
+
+		if (getOwnPropertySymbols) {
+			symbols = getOwnPropertySymbols(from);
+			for (var i = 0; i < symbols.length; i++) {
+				if (propIsEnumerable.call(from, symbols[i])) {
+					to[symbols[i]] = from[symbols[i]];
+				}
+			}
+		}
+	}
+
+	return to;
+};
+
+/***/ }),
 /* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -961,7 +961,7 @@ module.exports = emptyObject;
 
 
 
-var emptyFunction = __webpack_require__(1);
+var emptyFunction = __webpack_require__(2);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -1156,7 +1156,7 @@ module.exports = ExecutionEnvironment;
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(1);
+var emptyFunction = __webpack_require__(2);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -1419,7 +1419,7 @@ module.exports = getActiveElement;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(2);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -1438,6 +1438,10 @@ var _workexp2 = _interopRequireDefault(_workexp);
 var _portfolio = __webpack_require__(43);
 
 var _portfolio2 = _interopRequireDefault(_portfolio);
+
+var _education = __webpack_require__(50);
+
+var _education2 = _interopRequireDefault(_education);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1464,7 +1468,8 @@ var App = function (_React$Component) {
                 null,
                 _react2.default.createElement(_header2.default, null),
                 _react2.default.createElement(_workexp2.default, null),
-                _react2.default.createElement(_portfolio2.default, null)
+                _react2.default.createElement(_portfolio2.default, null),
+                _react2.default.createElement(_education2.default, null)
             );
         }
     }]);
@@ -1492,8 +1497,8 @@ var App = function (_React$Component) {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var f = __webpack_require__(4),
-    p = __webpack_require__(7);__webpack_require__(3);var r = __webpack_require__(1);
+var f = __webpack_require__(6),
+    p = __webpack_require__(7);__webpack_require__(3);var r = __webpack_require__(2);
 function t(a) {
   for (var b = arguments.length - 1, d = "Minified React error #" + a + "; visit http://facebook.github.io/react/docs/error-decoder.html?invariant\x3d" + a, e = 0; e < b; e++) {
     d += "\x26args[]\x3d" + encodeURIComponent(arguments[e + 1]);
@@ -1626,11 +1631,11 @@ if (process.env.NODE_ENV !== "production") {
 
     'use strict';
 
-    var objectAssign$1 = __webpack_require__(4);
+    var objectAssign$1 = __webpack_require__(6);
     var require$$0 = __webpack_require__(8);
     var emptyObject = __webpack_require__(7);
     var invariant = __webpack_require__(3);
-    var emptyFunction = __webpack_require__(1);
+    var emptyFunction = __webpack_require__(2);
     var checkPropTypes = __webpack_require__(9);
 
     /**
@@ -3368,10 +3373,10 @@ if (process.env.NODE_ENV === 'production') {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var aa = __webpack_require__(2);__webpack_require__(3);var l = __webpack_require__(11),
-    n = __webpack_require__(4),
+var aa = __webpack_require__(1);__webpack_require__(3);var l = __webpack_require__(11),
+    n = __webpack_require__(6),
     ba = __webpack_require__(12),
-    ca = __webpack_require__(1),
+    ca = __webpack_require__(2),
     da = __webpack_require__(7),
     ea = __webpack_require__(13),
     fa = __webpack_require__(14),
@@ -5820,7 +5825,7 @@ module.exports = isNode;
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var react=__webpack_require__(2);var invariant=__webpack_require__(3);var ExecutionEnvironment=__webpack_require__(11);var _assign=__webpack_require__(4);var EventListener=__webpack_require__(12);var require$$0=__webpack_require__(8);var hyphenateStyleName=__webpack_require__(25);var emptyFunction=__webpack_require__(1);var camelizeStyleName=__webpack_require__(27);var performanceNow=__webpack_require__(29);var propTypes=__webpack_require__(31);var emptyObject=__webpack_require__(7);var checkPropTypes=__webpack_require__(9);var shallowEqual=__webpack_require__(13);var containsNode=__webpack_require__(14);var focusNode=__webpack_require__(15);var getActiveElement=__webpack_require__(16);/**
+ */var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};if(process.env.NODE_ENV!=="production"){(function(){'use strict';var react=__webpack_require__(1);var invariant=__webpack_require__(3);var ExecutionEnvironment=__webpack_require__(11);var _assign=__webpack_require__(6);var EventListener=__webpack_require__(12);var require$$0=__webpack_require__(8);var hyphenateStyleName=__webpack_require__(25);var emptyFunction=__webpack_require__(2);var camelizeStyleName=__webpack_require__(27);var performanceNow=__webpack_require__(29);var propTypes=__webpack_require__(31);var emptyObject=__webpack_require__(7);var checkPropTypes=__webpack_require__(9);var shallowEqual=__webpack_require__(13);var containsNode=__webpack_require__(14);var focusNode=__webpack_require__(15);var getActiveElement=__webpack_require__(16);/**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
  * This source code is licensed under the MIT license found in the
@@ -9482,10 +9487,10 @@ if (process.env.NODE_ENV !== 'production') {
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
-var emptyFunction = __webpack_require__(1);
+var emptyFunction = __webpack_require__(2);
 var invariant = __webpack_require__(3);
 var warning = __webpack_require__(8);
-var assign = __webpack_require__(4);
+var assign = __webpack_require__(6);
 
 var ReactPropTypesSecret = __webpack_require__(10);
 var checkPropTypes = __webpack_require__(9);
@@ -10005,7 +10010,7 @@ module.exports = function (isValidElement, throwOnDirectAccess) {
 
 
 
-var emptyFunction = __webpack_require__(1);
+var emptyFunction = __webpack_require__(2);
 var invariant = __webpack_require__(3);
 var ReactPropTypesSecret = __webpack_require__(10);
 
@@ -10065,7 +10070,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(6)(content, options);
+var update = __webpack_require__(5)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -10085,7 +10090,7 @@ if(false) {
 /* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)(undefined);
+exports = module.exports = __webpack_require__(4)(undefined);
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
 exports.push([module.i, "@import url(http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css);", ""]);
@@ -10204,7 +10209,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(2);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -10329,7 +10334,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(6)(content, options);
+var update = __webpack_require__(5)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -10349,7 +10354,7 @@ if(false) {
 /* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)(undefined);
+exports = module.exports = __webpack_require__(4)(undefined);
 // imports
 
 
@@ -10370,7 +10375,7 @@ Object.defineProperty(exports, "__esModule", {
     value: true
 });
 
-var _react = __webpack_require__(2);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -10616,7 +10621,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(6)(content, options);
+var update = __webpack_require__(5)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -10636,7 +10641,7 @@ if(false) {
 /* 42 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)(undefined);
+exports = module.exports = __webpack_require__(4)(undefined);
 // imports
 
 
@@ -10659,7 +10664,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(2);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -10705,10 +10710,10 @@ var Portfolio = function (_Component) {
         _react2.default.createElement(
           'div',
           { className: 'project-list' },
-          _projects2.default.map(function (project) {
+          _projects2.default.map(function (project, index) {
             return _react2.default.createElement(
               'div',
-              { className: 'project' },
+              { className: 'project', key: index },
               _react2.default.createElement(_carousel2.default, { className: 'project__carousel', imgs: project.imgs }),
               _react2.default.createElement(
                 'h3',
@@ -10747,7 +10752,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(6)(content, options);
+var update = __webpack_require__(5)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -10767,12 +10772,12 @@ if(false) {
 /* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)(undefined);
+exports = module.exports = __webpack_require__(4)(undefined);
 // imports
 
 
 // module
-exports.push([module.i, "\n/*=======================*\\\n    #Portfolio\n\\*=======================*/\n\n.portfolio {\n    // display: flex;\n}\n\n@media (min-width: 900px) {\n\n    .portfolio {\n        width: 70%;\n        margin: 0 auto;\n    }\n}\n\n/*=======================*\\\n    #Project\n\\*=======================*/\n\n.project-list {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n\n\n    width: 100%;\n}\n\n.project {\n    margin: 6.4px;\n    margin: 0.4rem;\n    padding: 3.2px 4.8px 6.4px;\n    padding: 0.2rem 0.3rem 0.4rem;\n\n    width: 32%;\n\n    border-radius: 3px;\n    text-align: center;\n    background-color: #C8C8C8;\n}\n\n.project__carousel {\n        width: 100%;\n    }\n\n.project__title {\n        margin: 8px 0;\n        margin: 0.5rem 0;\n    }\n\n.project__sub-title {\n        font-weight: normal;\n        font-style: italic;\n    }\n\n/*=======================*\\\n    #Overlay\n\\*=======================*/\n\n.overlay {\n    opacity: 0.8;\n    background-color: #fff;\n}\n\n.overlay-box {\n}", ""]);
+exports.push([module.i, "\n/*=======================*\\\n    #Portfolio\n\\*=======================*/\n\n.portfolio {\n    // display: flex;\n}\n\n@media (min-width: 900px) {\n\n    .portfolio {\n        width: 70%;\n        margin: 0 auto;\n    }\n}\n\n/*=======================*\\\n    #Project\n\\*=======================*/\n\n.project-list {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n\n\n    width: 100%;\n}\n\n.project {\n    margin: 6.4px;\n    margin: 0.4rem;\n    padding: 3.2px 4.8px 6.4px;\n    padding: 0.2rem 0.3rem 0.4rem;\n\n    width: 23%;\n\n    border-radius: 3px;\n    text-align: center;\n    background-color: #C8C8C8;\n}\n\n.project__carousel {\n        width: 100%;\n    }\n\n.project__title {\n        margin: 8px 0;\n        margin: 0.5rem 0;\n    }\n\n.project__sub-title {\n        font-weight: normal;\n        font-style: italic;\n    }\n\n/*=======================*\\\n    #Overlay\n\\*=======================*/\n\n.overlay {\n    opacity: 0.8;\n    background-color: #fff;\n}\n\n.overlay-box {\n}", ""]);
 
 // exports
 
@@ -10790,7 +10795,7 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _react = __webpack_require__(2);
+var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
@@ -10905,7 +10910,7 @@ var transform;
 var options = {"hmr":true}
 options.transform = transform
 // add the styles to the DOM
-var update = __webpack_require__(6)(content, options);
+var update = __webpack_require__(5)(content, options);
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -10925,7 +10930,7 @@ if(false) {
 /* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(5)(undefined);
+exports = module.exports = __webpack_require__(4)(undefined);
 // imports
 
 
@@ -10940,6 +10945,145 @@ exports.push([module.i, "\n/*=======================*\\\n    #Carousel\n\\*=====
 /***/ (function(module, exports) {
 
 module.exports = [{"name":"PDHI","type":"Website","dateStart":"2016-06-01","dateEnd":"2017-09-01","github":"N/A","thumbnail":"","imgs":["./src/imgs/pdhi/logo.jpg","./src/imgs/pdhi/DonutChart-19.png","./src/imgs/pdhi/DonutChart.gif","./src/imgs/pdhi/new-google-map.png","./src/imgs/pdhi/google-zoom-shadow.png","./src/imgs/pdhi/TeamWire-2017-07-21/View.png","./src/imgs/pdhi/PeerGroup/PG-Header-v2.png"],"skills":["HTML5, CSS3, Less, Bootstrap, JavaScript, knockout.js, jQuery, D3.js, Node.js, Restful APIs, SQL, C#, ASP.NET, Agile, Scrum"],"software":["Git, NPM, JIRA, BitBucket, Confluence, Visual Studio, VS Code, SSMS"],"teamSize":5,"description":"","details":[]},{"name":"CareerClue","type":"Website","dateStart":"2015-07-01","dateEnd":"2015-09-01","github":"https://github.com/davidc4747/CareerClue","thumbnail":"","imgs":["./src/imgs/careerclue/pic (1).png","./src/imgs/careerclue/pic (2).png","./src/imgs/careerclue/pic (3).png","./src/imgs/careerclue/pic (4).png","./src/imgs/careerclue/pic (5).png","./src/imgs/careerclue/pic (6).png","./src/imgs/careerclue/pic (7).png"],"skills":["HTML5, CSS3, Sass, JavaScript, AngularJS, PHP, MySQL"],"software":["Sublime Text, Balsamiq, Git, GitHub, Grunt.js"],"teamSize":1,"description":"Job application management tool.","details":["",""]},{"name":"MathChallenge","type":"Website","dateStart":"2015-03-01","dateEnd":"2015-07-01","github":"https://github.com/davidc4747/MathChallenge","thumbnail":"","imgs":["./src/imgs/mathchallenge/pic1.png","./src/imgs/mathchallenge/pic2.png","./src/imgs/mathchallenge/pic3.png","./src/imgs/mathchallenge/Screenshot 2015-04-22 11.14.38.png","./src/imgs/mathchallenge/Screenshot 2015-05-01 10.08.32.png","./src/imgs/mathchallenge/Screenshot 2015-05-01 10.21.08.png","./src/imgs/mathchallenge/Screenshot 2015-05-01 10.21.17.png","./src/imgs/mathchallenge/Screenshot 2015-05-27 11.22.29.png","./src/imgs/mathchallenge/Screenshot 2015-06-01 08.45.13.png","./src/imgs/mathchallenge/Screenshot 2015-06-01 08.45.22.png","./src/imgs/mathchallenge/Screenshot 2015-06-07 08.48.04.png","./src/imgs/mathchallenge/Screenshot 2015-08-26 09.38.37.png","./src/imgs/mathchallenge/Screenshot 2015-08-26 09.38.46.png","./src/imgs/mathchallenge/Screenshot 2015-08-26 09.39.36.png","./src/imgs/mathchallenge/Screenshot 2015-08-26 09.39.51.png","./src/imgs/mathchallenge/Screenshot 2015-09-14 13.33.26.png"],"skills":["HTML, CSS3, Sass, JavaScript, AngularJS, D3.js, PHP, MySQL"],"software":["Sublime Text, Balsamiq, Git, GitHub, Grunt.js"],"teamSize":1,"description":"Math Challenge is a fun, simple, and addictive math game.","details":["Built a RPC API to allow data to be requested and displayed with AngularJS","Recorded and stored all game data to a MySql database","Graded the user’s game data through several MySql Views","Created a simple and responsive design using CSS3 properties and media queries"]},{"name":"Robo","type":"Windows Game","dateStart":"2014-11-01","dateEnd":"2014-11-01","github":"https://github.com/davidc4747/Robo","thumbnail":"","imgs":["http://placehold.it/300"],"skills":["C#","XNA"],"software":["Visual Studio","Git","GitHub"],"teamSize":1,"description":"Robo is a Progressive top-down RPG shooter. You're a robot sent down to kill as many zombies as you can. Fight until you die.","details":["Implemented an algorithm then generates random maps for player to fight through","Coded weapon system, enemies, drops, and menus"]},{"name":"CKB Horror","type":"Windows Game","dateStart":"2014-10-01","dateEnd":"2014-10-01","github":"https://github.com/mdwyer223/CKBHorror2.0","thumbnail":"","imgs":["./src/imgs/ckb/Screenshot 2015-02-14 09.34.31.png","./src/imgs/ckb/Screenshot 2015-02-14 09.34.40.png","./src/imgs/ckb/Screenshot 2015-02-14 09.34.59.png","./src/imgs/ckb/Screenshot 2015-02-14 09.35.07.png","./src/imgs/ckb/Screenshot 2015-02-14 09.35.17.png","./src/imgs/ckb/Screenshot 2015-02-14 09.35.21.png","./src/imgs/ckb/Screenshot 2015-02-14 09.35.29.png"],"skills":["C#","XNA"],"software":["Visual Studio","Git","GitHub"],"teamSize":3,"description":"A Horror game about what happens when you fall asleep in class. Creep through a dark school building, pick up clues, and try to find your way out.","details":["Implemented class hierarchy for game objects and menus"]},{"name":"Tow Def","type":"Windows Game","dateStart":"2015-01-01","dateEnd":"2015-01-01","github":"https://github.com/mdwyer223/BCATD","thumbnail":"","imgs":["./src/imgs/towdef/Screenshot 2015-02-14 09.50.47.png","./src/imgs/towdef/Screenshot 2015-02-14 09.52.41.png","./src/imgs/towdef/Screenshot 2015-02-14 09.54.21.png","./src/imgs/towdef/Screenshot 2015-02-14 09.55.07.png","./src/imgs/towdef/Screenshot 2015-02-14 09.56.00.png","./src/imgs/towdef/Screenshot 2015-02-14 09.58.05.png","./src/imgs/towdef/Screenshot 2015-02-14 10.01.38.png","./src/imgs/towdef/Screenshot 2015-02-14 10.02.47.png","./src/imgs/towdef/Screenshot 2015-02-14 10.03.28.png","./src/imgs/towdef/Screenshot 2015-02-14 10.05.26.png","./src/imgs/towdef/Screenshot 2015-02-14 10.05.52.png","./src/imgs/towdef/Screenshot 2015-02-14 10.06.32.png","./src/imgs/towdef/Screenshot 2015-02-14 10.07.26.png","./src/imgs/towdef/Screenshot 2015-02-14 10.08.57.png","./src/imgs/towdef/Screenshot 2015-02-14 10.14.34.png","./src/imgs/towdef/Screenshot 2015-02-14 10.15.15.png"],"skills":["C#","XNA"],"software":["Visual Studio","Git","GitHub"],"teamSize":3,"description":"TowDef is a strategic tower defense game.","details":["Created a tower defense game in 24 hours at the hackBCA hackathon","Researched and implemented the A* pathfinding algorithm that controlled enemy movement"]},{"name":"Fhysics","type":"Windows Game","dateStart":"2014-02-01","dateEnd":"2014-02-01","github":"https://github.com/mdwyer223/Fhysics","thumbnail":"","imgs":["./src/imgs/fhysics/Screenshot 2015-02-14 09.36.57.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.37.10.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.37.14.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.37.19.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.37.20.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.37.23.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.37.28.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.37.33.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.37.50.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.38.10.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.38.29.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.38.33.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.38.37.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.38.42.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.38.58.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.39.10.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.39.13.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.39.15.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.39.24.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.39.26.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.39.37.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.39.40.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.39.44.png","./src/imgs/fhysics/Screenshot 2015-02-14 09.39.59.png"],"skills":["C#","XNA"],"software":["Visual Studio","Git","GitHub"],"teamSize":2,"description":"You play as a block, your goal is to beat the game's 14 puzzles as fast as possible, but if you get hit by a trap you'll be sent back to stage 1. How long will it take you?","details":["Implemented advanced collision detection algorithm that prevents player from walking through walls and also allows them to push, pull, and interact with different objects","Project won the \"Best Video Game\" award at CodeDay hackathon"]},{"name":"Adlez","type":"Windows Game","dateStart":"2013-09-01","dateEnd":"2014-05-01","github":"https://github.com/mdwyer223/SpecialTopics","thumbnail":"","imgs":["./src/imgs/adlez/Screenshot 2015-02-13 12.21.50.png","./src/imgs/adlez/Screenshot 2015-02-13 12.22.03.png","./src/imgs/adlez/Screenshot 2015-02-13 12.22.46.png","./src/imgs/adlez/Screenshot 2015-02-13 12.24.08.png","./src/imgs/adlez/Screenshot 2015-02-13 12.24.55.png","./src/imgs/adlez/Screenshot 2015-02-13 12.24.58.png","./src/imgs/adlez/Screenshot 2015-02-13 12.25.02.png","./src/imgs/adlez/Screenshot 2015-02-13 12.25.11.png","./src/imgs/adlez/Screenshot 2015-02-13 12.25.46.png","./src/imgs/adlez/Screenshot 2015-02-13 12.25.54.png","./src/imgs/adlez/Screenshot 2015-02-13 12.26.12.png","./src/imgs/adlez/Screenshot 2015-02-13 12.26.17.png"],"skills":["C#","XNA"],"software":["Visual Studio","Git","GitHub"],"teamSize":5,"description":"Adlez is a dungeon crawling RPG inspired by Zelda.","details":["Coordinated a team of 5 developer and meet 2/3 of our long-term goals","Designed a class hierarchy to accelerate the creation of new features","Created multiple enemy types for the player to ght against in each dungeon"]},{"name":"MrSpotswood","type":"Windows Form","dateStart":"2013-03-01","dateEnd":"2013-03-01","github":"","thumbnail":"","imgs":["./src/imgs/mrspotswood/Screenshot 2014-12-25 00.14.36.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.17.00.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.17.53.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.29.55.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.30.20.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.30.28.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.31.11.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.31.43.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.31.54.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.31.59.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.32.10.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.32.17.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.32.21.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.32.26.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.32.47.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.32.50.png","./src/imgs/mrspotswood/Screenshot 2014-12-25 00.33.02.png"],"skills":["Visual Basic.Net"],"software":["​Visual Studio"],"teamSize":2,"description":"Created a program used to tally scores, deal with ties, and display the winner of our high school pageant \"Mr. Spotswood.\" The judges found my program was easy to use, had a simple design, and displayed the winner graphically.","details":["Won the MrSpotswood programming competition"]}]
+
+/***/ }),
+/* 50 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(51);
+
+var _edu = __webpack_require__(53);
+
+var _edu2 = _interopRequireDefault(_edu);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Education = function (_Component) {
+    _inherits(Education, _Component);
+
+    function Education() {
+        _classCallCheck(this, Education);
+
+        return _possibleConstructorReturn(this, (Education.__proto__ || Object.getPrototypeOf(Education)).apply(this, arguments));
+    }
+
+    _createClass(Education, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'section',
+                { className: 'edu' },
+                _react2.default.createElement(
+                    'h2',
+                    { className: 'title' },
+                    _react2.default.createElement('span', { className: 'icon fa fa-book' }),
+                    ' Education'
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'school-list' },
+                    _edu2.default.map(function (school, index) {
+                        return _react2.default.createElement(
+                            'div',
+                            { className: 'school', key: index },
+                            _react2.default.createElement('img', { className: 'school__logo', src: school.logo, alt: school.name + ' logo' }),
+                            _react2.default.createElement(
+                                'h3',
+                                { className: 'school__name' },
+                                school.name
+                            ),
+                            _react2.default.createElement(
+                                'ul',
+                                { className: 'tag-list' },
+                                school.skills.map(function (skill, index) {
+                                    return _react2.default.createElement(
+                                        'li',
+                                        { className: 'tag', key: index },
+                                        skill
+                                    );
+                                })
+                            )
+                        );
+                    })
+                )
+            );
+        }
+    }]);
+
+    return Education;
+}(_react.Component);
+
+exports.default = Education;
+
+/***/ }),
+/* 51 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(52);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {"hmr":true}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(5)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/postcss-loader/lib/index.js??ref--1-2!./education.css", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/postcss-loader/lib/index.js??ref--1-2!./education.css");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(4)(undefined);
+// imports
+
+
+// module
+exports.push([module.i, "\n/*=======================*\\\n    #Education\n\\*=======================*/\n\n.edu {\n    // display: flex;\n}\n\n@media (min-width: 900px) {\n\n    .edu {\n        width: 70%;\n        margin: 0 auto;\n    }\n}\n\n/*=======================*\\\n    #School list\n\\*=======================*/\n\n.school-list {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -ms-flex-wrap: wrap;\n        flex-wrap: wrap;\n}\n\n.school {\n    padding: 16px 4.8px;\n    padding: 1rem 0.3rem;\n    width: 24%;\n    text-align: center;\n}\n\n.school + .school {\n        border-left: 1px solid #C8C8C8;\n    }\n\n.school__logo {\n        display: inline-block;\n        margin: 6.4px 0;\n        margin: 0.4rem 0;\n\n        width: 100px;\n        height: 100px;\n        border-radius: 50%;\n    }\n\n.school__name {\n        margin: 8px 0;\n        margin: 0.5rem 0;\n    }", ""]);
+
+// exports
+
+
+/***/ }),
+/* 53 */
+/***/ (function(module, exports) {
+
+module.exports = [{"name":"Udacity","logo":"./src/imgs/logos/udacity.png","dateStart":"2013-12-01","dateEnd":"Present","skills":["JavaScript","ReactJS","Ajax"]},{"name":"Lynda.com","logo":"./src/imgs/logos/lynda.png","dateStart":"2015-04-01","dateEnd":"Present","skills":["Angular","Node.js","D3.js","ReactJS","WebPack","Bootstrap","Restful APIs","PostCSS"]},{"name":"PluralSight","logo":"./src/imgs/logos/pluralsight.png","dateStart":"2015-04-01","dateEnd":"Present","skills":["JavaScript","JS Design Patterns","AJAX","CSS3","Sass","Less","ASP.NET MVC","knockout.js"]},{"name":"NJIT","logo":"./src/imgs/logos/weird-njit.jpg","dateStart":"2014-09-01","dateEnd":"2015-04-01","skills":["Computer Science","Web Development"]}]
 
 /***/ })
 /******/ ]);
