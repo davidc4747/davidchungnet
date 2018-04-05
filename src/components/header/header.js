@@ -16,6 +16,7 @@ export default class Header extends Component {
                 <li className="header__social-item"><a target="_blank" href="https://linkedin.com/in/davidc4747/"><span className="icon fa fa-linkedin-square"></span></a></li>
                 <li className="header__social-item"><a target="_blank" href="https://github.com/davidc4747"><span className="icon fa fa-github-square"></span></a></li>
                 <li className="header__social-item"><a target="_blank" href="https://twitter.com/davidc4747"><span className="icon fa fa-twitter-square"></span></a></li>
+                {/* <li className="header__social-item"><a target="_blank" href="https://codepen.io/davidc4747/"><span className="icon fa fa-square"></span></a></li> */}
               </ul>
             </div>
 

@@ -9,10 +9,14 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fbfbfb;
 
-    // margin: 0;
-    // padding: 0;
+    
+    color: #fbfbfb;
+    background-color: #323A41;
+    background: linear-gradient(-45deg, #293036, #323A41);
+
+    margin: 0;
+    padding: 0;
 }
 
 html {
