@@ -33,7 +33,7 @@
     text-align: center;
 
     & + & {
-        border-left: 1px solid var(--grey);
+        border-left: 1px solid var(--primary);
     }
 
 

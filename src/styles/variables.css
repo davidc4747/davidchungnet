@@ -3,6 +3,11 @@
     --white: #FBFBFB;
     --grey: #C8C8C8;
     --darkGrey: #333333;
+    --old-highlight: #2547AA;
 
-    --highlight: #2547AA;
+
+    --primary: #1E2327;
+    --secondary: #131619;
+    --highlight: #02004A;
+    --lowlight: #707070;
 }

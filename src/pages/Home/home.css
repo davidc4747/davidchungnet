@@ -60,13 +60,13 @@
         margin-left: 20px;
         margin-bottom: -0.7rem;
         
-        background-color: #131619;
+        background-color: var(--secondary);
         border-radius: 4px;
     }
 
     &__message {
         padding: 1.4rem 0.8rem 4rem;
-        background-color: #1E2327;
+        background-color: var(--primary);
         
         width: 100%;
 
@@ -89,7 +89,7 @@
     }
 
     &__contact-info-link {
-        color: #707070;
+        color: var(--lowlight);
         font-size: 0.8rem;
         text-decoration: underline;
         &:hover {
@@ -113,7 +113,7 @@
 
         &:hover {
             cursor: pointer;
-            color: #1E2327;
+            color: var(--primary);
         }
     }
 }
@@ -153,7 +153,7 @@
         align-items: center;
         
         padding: 1.3rem;
-        background-color: #1E2327;
+        background-color: var(--primary);
         font-size: 1.2rem;
 
         border-radius: 4px;
@@ -164,7 +164,7 @@
 
         &:hover {
             cursor: pointer;
-            background-color: #131619;
+            background-color: var(--secondary);
             transform: scale(1.05);
         }
     }

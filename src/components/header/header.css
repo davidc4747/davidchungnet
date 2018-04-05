@@ -46,7 +46,7 @@
     \*-------------------------*/
 
     &__contact {
-        background-color: var(--grey);
+        background-color: var(--primary);
         padding: 0.6rem;
         border-radius: 4px;
     }
