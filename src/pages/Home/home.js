@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './home.css';
 
+import Navbar from '../../components/navbar/navbar.js';
+
 export default class Header extends Component {
     render() {
         return (

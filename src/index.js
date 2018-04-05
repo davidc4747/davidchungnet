@@ -21,6 +21,7 @@ class App extends React.Component {
             <Router>
                 <div>
                     <Route exact path="/" component={Home} />
+                    {/* <Route path="/home" component={Resume} /> */}
                     <Route path="/resume" component={Resume} />
                     <Route path="/projects" component={InProgress} />
                     <Route path="/journal" component={InProgress} />
