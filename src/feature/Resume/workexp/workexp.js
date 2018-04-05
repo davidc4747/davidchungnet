@@ -9,7 +9,7 @@ const WorkExp = () => (
         <div className="exp">
 
             <div className="exp__header">
-                <img className="exp__img" src="./src/imgs/pdhi/logo.jpg" alt=""/>
+                <img className="exp__img" src="./src/assets/imgs/pdhi/logo.jpg" alt=""/>
                 <h3 className="exp__title">
                     <div className="exp__company">PDHI</div>
                     <div className="exp__position">Full-Stack Developer</div>

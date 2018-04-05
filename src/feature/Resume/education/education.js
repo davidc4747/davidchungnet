@@ -1,7 +1,7 @@
 
 import React, {Component} from 'react';
 import './education.css';
-import schools from 'json-loader!../../edu.json';
+import schools from 'json-loader!../../../assets/edu.json';
 
 export default class Education extends Component {
   render () {

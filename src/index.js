@@ -7,10 +7,10 @@ import {
 } from 'react-router-dom';
 
 import './styles/styles.css';
-import Home from './pages/Home/home.js';
-import Resume from './pages/Resume/resume.js';
+import Home from './feature/Home/home.js';
+import Resume from './feature/Resume/resume.js';
 
-import InProgress from './pages/InProgress/inprogress.js';
+import InProgress from './feature/InProgress/inprogress.js';
 
 
 

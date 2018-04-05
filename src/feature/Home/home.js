@@ -11,7 +11,7 @@ export default class Header extends Component {
             <section className="home">
 
                 <div className="welcome">
-                    <img className="welcome__img" src="./src/imgs/AniDave.jpg" alt="Image of David Chung" />
+                    <img className="welcome__img" src="./src/assets/imgs/AniDave.jpg" alt="Image of David Chung" />
                     <div className="welcome__chatbox">
                         <h3 className="welcome__name-tag">David Chung</h3>
                         <div className="welcome__message">Hey guys, welcome to my site! <p>I've a lot of stuff here so let me know what you wanna see.</p></div>
