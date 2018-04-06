@@ -19,12 +19,12 @@
     #Project
 \*=======================*/
 
-.project-list {
+.portfolio__project-list {
     display: flex;
     flex-flow: row wrap;
 }
 
-.project {
+.portfolio__project {
     overflow: hidden;
     margin: 0.3rem;
 

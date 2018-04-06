@@ -10,7 +10,6 @@
 
         "thumbnail": "./src/assets/imgs/pdhi/logo.jpg",
         "imgs": [
-            "./src/assets/imgs/pdhi/logo.jpg",
             "./src/assets/imgs/pdhi/DonutChart-19.png",
             "./src/assets/imgs/pdhi/DonutChart.gif",
             "./src/assets/imgs/pdhi/new-google-map.png",
