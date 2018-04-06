@@ -2,6 +2,34 @@
 @import "./variables.css";
 
 /*=======================*\
+    #Form
+\*=======================*/
+
+.btn {
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn--primary {
+    color: var(--white);
+    background-color: var(--secondary);
+
+    &:hover {
+        color: var(--white);
+        background-color: var(--primary);        
+    }
+}
+
+
+
+
+
+/*=======================*\
     #Helper classes
 \*=======================*/
 
