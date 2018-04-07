@@ -15,7 +15,7 @@ export default () => (
 
         <Header />
         <Workexp />
-        {/* <Portfolio /> */}
+        <Portfolio />
         <Education />
 
         <div className="resume__btn-holder">
