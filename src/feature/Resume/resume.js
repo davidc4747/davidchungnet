@@ -19,7 +19,7 @@ export default () => (
         <Education />
 
         <div className="resume__btn-holder">
-            <a className="btn btn--primary resume__download" href="./src/assets/David-Chung.pdf" target="_blank">Download</a>
+            <a className="btn btn--primary resume__download" href="./assets/David-Chung.pdf" target="_blank">Download</a>
         </div>
     </div>
 );

@@ -1,7 +1,7 @@
 [
     {
         "name": "Udacity",
-        "logo": "./src/assets/imgs/logos/udacity.png",
+        "logo": "./assets/imgs/logos/udacity.png",
 
         "dateStart": "2013-12-01",
         "dateEnd": "Present",
@@ -14,7 +14,7 @@
     },
     {
         "name": "Lynda.com",
-        "logo": "./src/assets/imgs/logos/lynda.png",
+        "logo": "./assets/imgs/logos/lynda.png",
 
         "dateStart": "2015-04-01",
         "dateEnd": "Present",
@@ -32,7 +32,7 @@
     },
     {
         "name": "PluralSight",
-        "logo": "./src/assets/imgs/logos/pluralsight.png",
+        "logo": "./assets/imgs/logos/pluralsight.png",
 
         "dateStart": "2015-04-01",
         "dateEnd": "Present",
@@ -50,7 +50,7 @@
     },
     {
         "name": "NJIT",
-        "logo": "./src/assets/imgs/logos/weird-njit.jpg",
+        "logo": "./assets/imgs/logos/weird-njit.jpg",
 
         "dateStart": "2014-09-01",
         "dateEnd": "2015-04-01",

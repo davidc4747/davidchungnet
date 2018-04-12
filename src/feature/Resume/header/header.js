@@ -7,7 +7,7 @@ export default class Header extends Component {
     return (
         <header className="header">
 
-            <img className="header__headshot" src="./src/assets/imgs/AniDave.jpg" alt=""/>
+            <img className="header__headshot" src="./assets/imgs/AniDave.jpg" alt=""/>
 
             <div className="header__top">
               <h1 className="header__name">David Chung</h1>

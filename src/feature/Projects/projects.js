@@ -2,7 +2,7 @@ import React from 'react';
 import './projects.css';
 
 import Navbar from '../../components/navbar/navbar.js';
-import projects from 'json-loader!../../assets/projects.json';
+import projects from 'json-loader!../../../assets/projects.json';
 
 
 export default () => (

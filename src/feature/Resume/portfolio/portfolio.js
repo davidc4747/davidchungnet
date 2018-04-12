@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import './portfolio.css';
 // import Carousel from '../carousel/carousel.js';
-import projects from 'json-loader!../../../assets/projects.json';
+import projects from 'json-loader!../../../../assets/projects.json';
 
 
 class Portfolio extends Component {
