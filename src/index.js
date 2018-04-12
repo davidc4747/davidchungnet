@@ -10,9 +10,8 @@ import './styles/styles.css';
 import Home from './feature/Home/home.js';
 import Resume from './feature/Resume/resume.js';
 import Projects from './feature/Projects/projects.js';
-
-import InProgress from './feature/InProgress/inprogress.js';
-
+import Journal from './feature/Journal/journal.js';
+import FAQ from './feature/FAQ/faq.js';
 
 
 
@@ -24,8 +23,8 @@ class App extends React.Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/resume" component={Resume} />
                     <Route path="/projects" component={Projects} />
-                    <Route path="/journal" component={InProgress} />
-                    <Route path="/faq" component={InProgress} />
+                    <Route path="/journal" component={Journal} />
+                    <Route path="/faq" component={FAQ} />
                 </div>
             </Router>
         );
