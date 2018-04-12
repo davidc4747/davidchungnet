@@ -89,11 +89,16 @@
     }
 
     &__contact-info-link {
+        margin-right: auto;
         color: var(--lowlight);
         font-size: 0.8rem;
-        text-decoration: underline;
+
         &:hover {
             cursor: pointer;
+        }
+
+        &:after {
+            content: "davidc4747\00a9yahoo.com";
         }
     }
 
@@ -104,9 +109,13 @@
         font-size: 1.2rem;
 
         display: flex;
+        width: 100%;
     }
 
     &__social-item {
+        display: flex;
+        align-items: center;
+
         margin: 0 0.4rem;
         padding: 0.3rem;
         transition: color 0.2s ease-out;
@@ -117,6 +126,44 @@
         }
     }
 }
+
+
+/* Phone layout */
+@media(max-width: 610px) {
+    .welcome__contact-info-link {         
+    
+        &:after {
+            content: "davidc4747";
+        }
+    }
+}
+@media(max-width: 480px) {
+    .welcome__social {
+        justify-content: center;
+    }
+
+    .welcome__contact-info-link {   
+        display: flex;
+        align-items: center;
+
+        margin: 0 0.4rem;
+        padding: 0.3rem;
+        transition: color 0.2s ease-out;  
+
+        font-size: 1rem;
+        color: var(--white);   
+    
+        &:hover {
+            cursor: pointer;
+            color: var(--primary);
+        }    
+    
+        &:after {
+            content: "";
+        }
+    }
+}
+
 
 
 

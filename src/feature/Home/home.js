@@ -17,8 +17,10 @@ export default class Header extends Component {
                         <div className="welcome__message">Hey guys, welcome to my site! <p>I've a lot of stuff here so let me know what you wanna see.</p></div>
 
                         <div className="welcome__contact-info">
-                            <div className="welcome__contact-info-link"><i className="fas fa-envelope icon"></i> <a href="mailto:davidc4747@yahoo.com">davidc4747@yahoo.com</a></div>
                             <ul className="welcome__social">
+                                <li className="welcome__contact-info-link">
+                                    <a href="mailto:davidc4747@yahoo.com"><i className="fas fa-envelope icon"></i></a>
+                                </li>
                                 <li className="welcome__social-item"><a target="_blank" rel="nofollow" href="https://twitter.com/davidc4747"><i className="fab fa-twitter"></i></a></li>
                                 <li className="welcome__social-item"><a target="_blank" rel="nofollow" href="https://www.linkedin.com/in/davidc4747/"><i className="fab fa-linkedin-in"></i></a></li>
                                 <li className="welcome__social-item"><a target="_blank" rel="nofollow" href="https://github.com/davidc4747"><i className="fab fa-github"></i></a></li>
