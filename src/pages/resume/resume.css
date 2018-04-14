@@ -1,0 +1,16 @@
+@import "../../styles/variables.scss";
+
+/* Download Button */
+.resume {
+
+    &__btn-holder {
+        display: flex;
+        justify-content: center;
+        margin: 5rem 0 4rem;
+    }
+
+    &__download {
+        display: inline-block;
+        font-size: 2rem;
+    }
+}

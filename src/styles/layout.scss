@@ -1,0 +1,60 @@
+
+
+/*=======================*\
+    #Form
+\*=======================*/
+
+.btn {
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn--primary {
+    color: var(--white);
+    background-color: var(--primary);
+
+    &:hover {
+        color: var(--white);
+        background-color: var(--secondary);        
+    }
+}
+
+
+
+
+
+/*=======================*\
+    #Helper classes
+\*=======================*/
+
+.highlight {
+    color: var(--highlight);
+}
+
+.list-unstyled {
+    list-style-type: none;
+}
+
+.icon {
+    margin: 0.4rem 0.3rem;
+}
+
+.title {
+    margin: 1rem 0;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--primary);
+
+    color: var(--highlight);
+    text-align: center;
+    font-size: 1.8rem;
+}
+.soon {
+    margin: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}

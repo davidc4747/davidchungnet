@@ -1,3 +1,6 @@
+# Project dependencies
+.cache
+
 ### Node ###
 package-lock.json
 
@@ -17,6 +20,7 @@ yarn-error.log*
 
 # Yarn Integrity file
 .yarn-integrity
+yarn-error.log
 
 # Optional eslint cache
 .eslintcache
