@@ -1,0 +1,53 @@
+
+@import "../../styles/variables.scss";
+
+/*=======================*\
+    #Education
+\*=======================*/
+
+.edu {
+    // display: flex;
+
+    @media(min-width: 900px) {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+/*=======================*\
+    #School list
+\*=======================*/
+
+.school-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.school {
+    padding: 1rem 0.3rem;
+    width: 24%;
+    text-align: center;
+
+    & + & {
+        border-left: 1px solid var(--primary);
+    }
+
+
+
+    &__logo {
+        display: inline-block;
+        margin: 0.4rem 0;
+
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    &__name {
+        margin: 0.5rem 0;
+    }
+}

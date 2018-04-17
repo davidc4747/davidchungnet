@@ -1,0 +1,13 @@
+
+@import "../../styles/variables.scss";
+
+/*=======================*\
+    #Footer
+\*=======================*/
+
+.footer {
+    margin-top: 4rem;
+    border-top: 1px solid var(--black);
+    background-color: var(--primary);
+    min-height: 4rem;
+}

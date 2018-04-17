@@ -1,0 +1,11 @@
+@import "../../styles/variables.scss";
+
+
+.portfolio {
+    
+
+    @media(min-width: 900px){
+        margin: 0 auto;
+        width: 70%;
+    }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320">
+  <rect width="100%" height="100%" style="fill: #A2A2A2"></rect>
+  <text x="47" y="160" fill="#F49837" font-family="Arial" font-size="40">Carreer</text>
+  <text x="188" y="160" fill="#333333" font-family="Arial" font-size="40">Clue</text>
+  <rect x="40" y="169" width="240" height="2" style="fill: #333333"></rect>
+</svg>

@@ -1,0 +1,50 @@
+[
+    {
+        "question": "Tell me a little about yourself",
+        "answer": "Well... That’s a long story..."
+    },
+    {
+        "question": "What programming languages are you most experienced in?",
+        "answer": "HTML. CSS. JavaScript. C#."
+    },
+    {
+        "question": "What originally got you interested in Computer Science?",
+        "answer": "My high school teacher showed me that I could use programming to make video games, and websites. It was pretty much over after that."
+    },
+    {
+        "question": "What excites about Web Development?",
+        "answer": "Solving problems and constantly trying to improve my solutions."
+    },
+    {
+        "question": "What do I love the most about programming?",
+        "answer": "Having this idea in your head, and simple working at it until it becomes real. There is no better feeling than seeing your creation after struggling through a million different unexpected problems"
+    },
+    {
+        "question": "What project are you most proud? Why?",
+        "answer": "MathChallenge for sure. I failed so0o0o0o0o many times while making that project. Out of my entire portfolio, it’s definity the one I learned the most from and it help jump start my skills as a web developer. Both Backend and FrontEnd."
+    },
+    {
+        "question": "Would you be willing to commute to San Jose?",
+        "answer": "I’m open to any opportunity in the bay area"
+    },
+    {
+        "question": "When were you looking to start?",
+        "answer": "When do you need me?"
+    },
+    {
+        "question": "What have you been doing since you moved to California?",
+        "answer": "Practicing. Working on different projects. Checkout my Github to see what I’m up too."
+    },
+    {
+        "question": "Do you prefer Front-end, Back-end, or Full-Stack?",
+        "answer": "They each have their own challenges but, the Front-end is where I feel most at home ❤️."
+    },
+    {
+        "question": "Are you okay with working as a Full-Stack Developer?",
+        "answer": "Yes, of course! I like to solve the user’s problems. If they need me to write some Backend code in order to give them that feature they wanted then I’ll gladly do it."
+    },
+    {
+        "question": "Were you looking to work in a specific industry?",
+        "answer": "Nope. All industries have interesting technical challenges. I’m not picky."
+    }
+]

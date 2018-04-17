@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="320">
+  <rect width="100%" height="100%" style="fill: #000082"></rect>
+  <text x="12" y="140" fill="#fbfbfb" font-weight="bold" font-size="40" font-family="sans-serif">Math Challenge</text>
+  <rect x="14" y="153" rx="3" width="142" height="6" style="fill: #FFD700"></rect>
+  <rect x="165" y="153" rx="3" width="140" height="6" style="fill: #6495ED"></rect>
+</svg>
