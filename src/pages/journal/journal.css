@@ -1,0 +1,49 @@
+
+@import "../../styles/variables.scss";
+
+/*=======================*\
+    #Journal List
+\*=======================*/
+
+.journal-list {
+    padding: 0;
+    margin: 0 auto;
+    list-style-type: none;
+
+    width: 95%;
+    max-width: 1000px;
+}
+
+.journal-item {
+    margin: 0.6rem;
+    padding: 1.3rem;
+    background-color: var(--primary);
+
+    border-radius: 4px;
+    box-shadow: 16px 16px 1rem rgba(0, 0, 0, 0.10);
+
+
+    &__title {
+        display: flex;
+        align-items: center;
+
+        padding-bottom: 0.4rem;
+        border-bottom: 1px solid var(--lowlight);
+    }
+
+    &__body {
+        margin: 0.4rem 0;
+    }
+}
+
+
+/* Grid */
+/* @supports (display: grid) {
+    .journal-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(0px, 580px));
+        justify-content: center;
+        
+        max-width: 100vw;
+    }
+} */
