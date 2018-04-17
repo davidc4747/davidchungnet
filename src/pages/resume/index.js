@@ -43,8 +43,6 @@ query resumeQuery {
 
 export default ({ data }) => (
     <div className="resume">
-        {/* {console.log("data.allEduJson.edges: ", data.allEduJson.edges)} */}
-
         <Navbar />
 
         <Header />

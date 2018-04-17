@@ -9,7 +9,7 @@ export default ({ data }) => (
     <div>
         <Navbar />
         <h1 className="page-header">Thoughts</h1>
-        <ul className="journal-list">
+        <ul className="page-container list-unstyled journal-list">
             {data.allJournalJson.edges.map(({ node: journal }, index) => (
                 <li key={journal.title} className="journal-item">
                     <h2 className="journal-item__title">{index === 0 && <img className="icon" src="/imgs/Naruto.png" alt="" width="32px" />}{journal.title}</h2>
