@@ -5,7 +5,9 @@
     #Journal List
 \*=======================*/
 
-.journal-list {}
+.journal-list {    
+    margin: 0 auto;
+}
 
 .journal-item {
     margin: 0.7rem;

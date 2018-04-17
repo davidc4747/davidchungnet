@@ -5,7 +5,9 @@
     #FAQ
 \*=======================*/
 
-.faq-list {}
+.faq-list {
+    margin: 0 auto;
+}
 
 
 .faq-item {
