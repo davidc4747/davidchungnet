@@ -17,7 +17,7 @@ export default ({ data }) => (
 
         <h1 className="home__header">Projects</h1>
         <ul className="list-unstyled page-container home__project-list">
-            {data.allProjectsJson.edges.slice(0, 2).map(({ node: project }, index) => (
+            {data.allProjectsJson.edges.slice(0, 4).map(({ node: project }, index) => (
                 <li className="card" key={index}>
                     <h2 className="card__title">{project.name}</h2>
                     <p className="card__body">
@@ -34,7 +34,7 @@ export default ({ data }) => (
             <div>
                 <h1 className="home__header">FAQ</h1>
                 <ul className="list-unstyled page-container">
-                    {data.allFaqJson.edges.slice(0, 5).map(({ node: faq }, index) => (
+                    {data.allFaqJson.edges.slice(0, 4).map(({ node: faq }, index) => (
                         <li className="card" key={index}>
                             <h2 className="card__title">{faq.question}</h2>
                             <p className="card__body" dangerouslySetInnerHTML={{ "__html": faq.answer }}></p>
