@@ -31,7 +31,7 @@ export default ({ data }) => (
         <Navbar />
         <ul className='project-list'>
             {data.allProjectsJson.edges.map(({ node: project }, index) => (
-                <li className="project-list__item project" key={index}>
+                <li id={project.name.toLowerCase().replace(" ", "-")} className="project-list__item project" key={index}>
                     <h1 className="project__title">{project.name}</h1>
 
                     {/* Scroll through images */}

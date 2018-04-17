@@ -6,15 +6,67 @@
 \*=======================*/
 
 .home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 
-    margin: 0 auto 0;
+    &__header {
+        text-align: center;
+        font-size: 2rem;
+        margin: 1.8rem 0 1.5rem;
+    }
 
-    width: 80%;
-    
+    &__link {
+        padding: 0 1rem;
+        margin-right: auto;
+
+        color: var(--lowlight);
+        font-size: 0.8rem;
+        text-align: right;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+
+    /*----------------------*\
+        #Project Preview
+    \*----------------------*/
+
+    &__project-list {
+        
+        @supports(display: grid) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(370px, 1fr))
+        }
+    }
+
+    &__project-thumbnail {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    &__project-link {
+        float: right;
+
+        margin-right: auto;
+        color: var(--lowlight);
+        font-size: 0.8rem;
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+
+    /*----------------------*\
+        #Resume Preview
+    \*----------------------*/
+
+
 }
+
+
 
 
 

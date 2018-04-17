@@ -3,41 +3,113 @@ import React from 'react';
 import Link from 'gatsby-link';
 import './index.css';
 
+import NavBar from '../components/navbar/navbar.js';
+import Header from '../components/header/header.js';
 
 
-export default () => (
+
+export default ({ data }) => (
     <section className="home">
+        <NavBar />
+        <Header />
 
-        <div className="welcome">
-            <img className="welcome__img" src="/imgs/AniDave.jpg" alt="Image of David Chung" />
-            <div className="welcome__chatbox">
-                <h3 className="welcome__name-tag">David Chung</h3>
-                <div className="welcome__message">Hey guys, welcome to my site! <p>I've a lot of stuff here so let me know what you wanna see.</p></div>
 
-                <div className="welcome__contact-info">
-                    <ul className="welcome__social">
-                        <li className="welcome__contact-info-link">
-                            <a href="mailto:davidc4747@yahoo.com"><i className="fas fa-envelope icon"></i></a>
+        <h1 className="home__header">Projects</h1>
+        <ul className="list-unstyled page-container home__project-list">
+            {data.allProjectsJson.edges.slice(0, 2).map(({ node: project }, index) => (
+                <li className="card" key={index}>
+                    <h2 className="card__title">{project.name}</h2>
+                    <p className="card__body">
+                        <img className="full-width home__project-thumbnail" src={project.thumbnail} alt={`${project.name} logo`} />
+                    </p>
+                    <a className="home__project-link" href={`/projects/#${project.name.toLowerCase().replace(" ", "-")}`}>Learn More >></a>
+                </li>
+            ))}
+        </ul>
+        <a className="page-container home__link" href={`/projects/#`}>See All >></a>
+
+
+        <section>
+            <div>
+                <h1 className="home__header">FAQ</h1>
+                <ul className="list-unstyled page-container">
+                    {data.allFaqJson.edges.slice(0, 5).map(({ node: faq }, index) => (
+                        <li className="card" key={index}>
+                            <h2 className="card__title">{faq.question}</h2>
+                            <p className="card__body" dangerouslySetInnerHTML={{ "__html": faq.answer }}></p>
                         </li>
-                        <li className="welcome__social-item"><a target="_blank" rel="nofollow" href="https://twitter.com/davidc4747"><i className="fab fa-twitter"></i></a></li>
-                        <li className="welcome__social-item"><a target="_blank" rel="nofollow" href="https://www.linkedin.com/in/davidc4747/"><i className="fab fa-linkedin-in"></i></a></li>
-                        <li className="welcome__social-item"><a target="_blank" rel="nofollow" href="https://github.com/davidc4747"><i className="fab fa-github"></i></a></li>
-                        <li className="welcome__social-item"><a target="_blank" rel="nofollow" href="https://codepen.io/davidc4747/"><i className="fab fa-codepen"></i></a></li>
-                        <li className="welcome__social-item"><a target="_blank" rel="nofollow" href="https://www.youtube.com/user/MeNumber47/featured"><i className="fab fa-youtube"></i></a></li>
-                    </ul>
-                </div>
+                    ))}
+                </ul>
+                <a className="page-container home__link" href={`/faq/#`}>See All >></a>
             </div>
 
-        </div>
 
 
-        <ul className="home-nav">
-            <Link to="resume"><li className="home-nav__item"><i className="home-nav__icon fa fa-briefcase"></i> Resume</li></Link>
-            <Link to="projects"><li className="home-nav__item"><i className="home-nav__icon fa fa-code"></i> Projects</li></Link>
-            <Link to="journal"><li className="home-nav__item"><i className="home-nav__icon fa fa-book"></i> Journal</li></Link>
-            <Link to="faq"><li className="home-nav__item"><i className="home-nav__icon fa fa-compass"></i> FAQ</li></Link>
-        </ul>
+            <div>
+                <h1 className="home__header">Thoughs</h1>
+                <ul className="list-unstyled page-container">
+                    {data.allJournalJson.edges.slice(0, 2).map(({ node: journal }, index) => (
+                        <li className="card" key={index}>
+                            <h2 className="card__title">{index === 0 && <img className="icon" src="/imgs/Naruto.png" alt="" width="32px" />}{journal.title}</h2>
+                            <p className="card__body" dangerouslySetInnerHTML={{ "__html": journal.body }}></p>
+                        </li>
+                    ))}
+                </ul>
+                <a className="page-container home__link" href={`/journal/#`}>See All >></a>
+            </div>
 
 
+
+        </section>
+
+
+
+        <footer className="page-footer"></footer>
     </section>
 );
+
+
+export const query = graphql`
+query homeQuery {
+    allProjectsJson {
+      edges {
+        node {
+          name
+          type
+          thumbnail
+          imgs
+          dateStart
+          dateEnd
+          skills
+          software
+          description
+          details
+        }
+      }
+    }
+    allWorkexpJson {
+        edges {
+          node {
+            company
+            title
+          }
+        }
+      }
+    allJournalJson {
+        edges {
+          node {
+            title
+            body
+          }
+        }
+      }
+    allFaqJson {
+        edges {
+          node {
+            question
+            answer
+          }
+        }
+      }
+  }
+`;

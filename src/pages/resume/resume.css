@@ -1,5 +1,15 @@
 @import "../../styles/variables.scss";
 
+
+.title {
+    margin: 1rem 0;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid var(--primary);
+
+    text-align: center;
+    font-size: 1.8rem;
+}
+
 /* Download Button */
 .resume {
 

@@ -17,6 +17,9 @@ export default ({ data }) => (
                 </li>
             ))}
         </ul>
+
+        
+        <footer className="page-footer"></footer>
     </div>
 );
 

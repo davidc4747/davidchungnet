@@ -46,7 +46,17 @@
     margin: 0.4rem 0.3rem;
 }
 
+.full-width {
+    width: 100%;
+}
 
+
+
+
+
+/*=======================*\
+    #Page Styles
+\*=======================*/
 
 .page-header {
     padding: 0.4rem 0;
@@ -56,17 +66,17 @@
 }
 
 .page-container {   
+    display: block;
+    margin: 0 auto;
     width: 95%;
-    max-width: 1000px;
+    max-width: 1100px;
 }
 
-.title {
-    margin: 1rem 0;
-    padding: 0.4rem 0;
-    border-bottom: 1px solid var(--primary);
-
-    text-align: center;
-    font-size: 1.8rem;
+.page-footer {
+    margin-top: 4rem;
+    border-top: 1px solid var(--black);
+    background-color: var(--primary);
+    min-height: 4rem;
 }
 
 
