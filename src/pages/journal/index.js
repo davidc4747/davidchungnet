@@ -2,6 +2,7 @@ import React from 'react';
 import './journal.css';
 
 import Navbar from '../../components/navbar/navbar.js';
+import Footer from '../../components/footer/footer.js';
 
 
 
@@ -17,6 +18,8 @@ export default ({ data }) => (
                 </li>
             ))}
         </ul>
+
+        {/* <Footer /> */}
     </div>
 );
 

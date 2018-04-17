@@ -5,6 +5,7 @@ import './index.css';
 
 import NavBar from '../components/navbar/navbar.js';
 import Header from '../components/header/header.js';
+import Footer from '../components/footer/footer.js';
 
 
 
@@ -64,7 +65,7 @@ export default ({ data }) => (
 
 
 
-        <footer className="page-footer"></footer>
+        <Footer />
     </section>
 );
 

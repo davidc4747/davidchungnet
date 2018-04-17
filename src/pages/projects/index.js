@@ -2,28 +2,7 @@ import React from 'react';
 import './projects.css';
 
 import Navbar from '../../components/navbar/navbar.js';
-
-
-export const query = graphql`
-    query projectsQuery {
-        allProjectsJson {
-        edges {
-            node {
-                name
-                type
-                thumbnail
-                imgs
-                dateStart
-                dateEnd
-                skills
-                software
-                description
-                details
-                }
-            }
-        }
-    }
-`;
+import Footer from '../../components/footer/footer.js';
 
 
 export default ({ data }) => (
@@ -61,5 +40,29 @@ export default ({ data }) => (
             ))}
 
         </ul>
+
+        <Footer />
     </section>
 );
+
+
+export const query = graphql`
+    query projectsQuery {
+        allProjectsJson {
+        edges {
+            node {
+                name
+                type
+                thumbnail
+                imgs
+                dateStart
+                dateEnd
+                skills
+                software
+                description
+                details
+                }
+            }
+        }
+    }
+`;

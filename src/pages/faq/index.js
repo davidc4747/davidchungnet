@@ -2,6 +2,7 @@ import React from 'react';
 import './faq.css';
 
 import Navbar from '../../components/navbar/navbar.js';
+import Footer from '../../components/footer/footer.js';
 
 
 
@@ -19,7 +20,7 @@ export default ({ data }) => (
         </ul>
 
         
-        <footer className="page-footer"></footer>
+        <Footer />
     </div>
 );
 
