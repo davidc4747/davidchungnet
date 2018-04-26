@@ -47,7 +47,7 @@ export default ({ data }) => (
 
 
             <div>
-                <h1 className="home__header">Thoughs</h1>
+                <h1 className="home__header">Thoughts</h1>
                 <ul className="list-unstyled page-container">
                     {data.allJournalJson.edges.slice(0, 2).map(({ node: journal }, index) => (
                         <li className="card" key={index}>
