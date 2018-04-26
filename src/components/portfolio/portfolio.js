@@ -3,15 +3,15 @@ import React from 'react';
 import './portfolio.css';
 
 
-
+let displayedProjects = ["CareerClue", "MathChallenge", "Tow Def", "ResponsiveGif", "DarkSky"];
 
 export default ({ projects }) => (
-    <section className="portfolio">
-        <h2 className="title"><span className="icon fa fa-code"></span> Portfolio</h2>
+    <section className="portfolio page-container">
+        <h2 className="resume__title">{/* <span className="icon fa fa-code"></span> */} Portfolio</h2>
 
-        <div className="portfolio__project-list">
-            {projects.map(({ node: project }, index) =>
-                <div className="exp" key={project.name}>
+        <ul className="resume__list list-unstyled">
+            {projects.filter(({ node: project }) => displayedProjects.indexOf(project.name) > -1).map(({ node: project }, index) =>
+                <li className="exp" key={project.name}>
 
                     <div className="exp__header">
                         <img className="exp__img" src={`${project.thumbnail}`} alt="" />
@@ -36,14 +36,14 @@ export default ({ projects }) => (
                             </ul>
                         </li>
                         {project.description && <li>
-                            <span className="highlight">Description:</span>
+                            <span className="highlight">Description: </span>
                             <span>{project.description}</span>
                         </li>}
                         {project.details.map((detail, index) => <li key={index}>{detail}</li>)}
                     </ul>
-                </div>
+                </li>
             )}
-        </div>
+        </ul>
 
 
 

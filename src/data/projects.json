@@ -18,8 +18,8 @@
             "/imgs/pdhi/PeerGroup/PG-Header-v2.png"
         ],
 
-        "skills": ["HTML5, CSS3, Less, Bootstrap, JavaScript, knockout.js, jQuery, D3.js, Node.js, Restful APIs, SQL, C#, ASP.NET, Agile, Scrum"],
-        "software": ["Git, NPM, JIRA, BitBucket, Confluence, Visual Studio, VS Code, SSMS"],
+        "skills": ["HTML5" , "CSS3" , "Less" , "Bootstrap" , "JavaScript" , "knockout.js" , "jQuery" , "D3.js" , "Node.js" , "Restful APIs" , "SQL" , "C#" , "ASP.NET" , "Agile" , "Scrum"],
+        "software": ["Git" , "NPM" , "JIRA" , "BitBucket" , "Confluence" , "Visual Studio" , "VS Code" , "SSMS"],
         "teamSize": 5,
         "description": "",
         "details": [
@@ -45,8 +45,8 @@
             "/imgs/careerclue/pic (7).png"
         ],
 
-        "skills": ["HTML5, CSS3, Sass, JavaScript, AngularJS, PHP, MySQL"],
-        "software": ["Sublime Text, Balsamiq, Git, GitHub, Grunt.js"],
+        "skills": ["HTML5" , "CSS3" , "Sass" , "JavaScript" , "AngularJS" , "PHP" , "MySQL"],
+        "software": ["Sublime Text" , "Balsamiq" , "Git" , "GitHub" , "Grunt.js"],
         "teamSize": 1,
         "description": "Job application management tool.",
         "details": [
@@ -83,8 +83,8 @@
             "/imgs/mathchallenge/Screenshot 2015-09-14 13.33.26.png"
         ],
 
-        "skills": ["HTML, CSS3, Sass, JavaScript, AngularJS, D3.js, PHP, MySQL"],
-        "software": ["Sublime Text, Balsamiq, Git, GitHub, Grunt.js"],
+        "skills": ["HTML" , "CSS3" , "Sass" , "JavaScript" , "AngularJS" , "D3.js" , "PHP" , "MySQL"],
+        "software": ["Sublime Text" , "Balsamiq" , "Git" , "GitHub" , "Grunt.js"],
         "teamSize": 1,
         "description": "Math Challenge is a fun, simple, and addictive math game.",
         "details": [

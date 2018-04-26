@@ -14,7 +14,19 @@ export default ({ data }) => (
     <div className="resume">
         <Navbar />
 
-        <Header />
+        {/* <Header /> */}
+        <header className="resume__header page-container">
+            <div className="resume__info">
+                <h1 className="resume__header-name">David Chung</h1>
+                <div>San Francisco, CA</div>
+                <div>(908) 930-8054 | davidc4747@yahoo.com</div>
+            </div>
+            <a className="btn btn--primary resume__download" href="./David-Chung.pdf" target="_blank">Download</a>
+        </header>
+
+
+
+
         <Workexp />
         <Portfolio projects={data.allProjectsJson.edges} />
         <Education schools={data.allEduJson.edges} />

@@ -4,15 +4,13 @@
 /*=======================*\
     #Education
 \*=======================*/
-
+/* 
 .edu {
-    // display: flex;
-
     @media(min-width: 900px) {
         width: 70%;
         margin: 0 auto;
     }
-}
+} */
 
 
 
@@ -24,7 +22,12 @@
 
 .school-list {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid var(--primary);
+
+    @media(max-width: 40rem) {
+        flex-direction: column;
+    }
 }
 
 .school {
@@ -32,8 +35,19 @@
     width: 24%;
     text-align: center;
 
+    
+
     & + & {
         border-left: 1px solid var(--primary);
+    }
+
+    @media(max-width: 40rem) {
+        width: 100%;
+        
+        & + & {
+            border: none;
+            border-top: 1px solid var(--primary);
+        }
     }
 
 

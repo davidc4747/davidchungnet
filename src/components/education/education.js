@@ -3,8 +3,8 @@ import React from 'react';
 import './education.css';
 
 export default ({ schools }) => (
-    <section className="edu">
-        <h2 className="title"><span className="icon fa fa-book"></span> Education</h2>
+    <section className="edu page-container">
+        <h2 className="resume__title">{/* <span className="icon fa fa-book"></span> */} Education</h2>
         <div className="school-list">
             {schools.map(({ node: school }, index) =>
                 <div className="school" key={index}>
