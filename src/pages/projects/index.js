@@ -8,6 +8,9 @@ import Footer from '../../components/footer/footer.js';
 export default ({ data }) => (
     <section>
         <Navbar />
+        
+        <h1 className="page-container page-header">Projects</h1>
+
         <ul className='project-list'>
             {data.allProjectsJson.edges.map(({ node: project }, index) => (
                 <li id={project.name.toLowerCase().replace(" ", "-")} className="project-list__item project" key={index}>

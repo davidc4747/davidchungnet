@@ -1,13 +1,89 @@
 [
     {
+        "name": "ResponsiveGif",
+        "type": "Electron App",
+        "dateStart": "2018-03-01",
+        "dateEnd": "2018-03-01",
+        "github": "https://github.com/davidc4747/responsive-gif",
+        "thumbnail": "/imgs/responsivegif/demo3.still1.png",
+        "imgs": [
+            "/imgs/responsivegif/demo3_1.gif",
+            "/imgs/responsivegif/demo3.still1.png",
+            "/imgs/responsivegif/easing.gif",
+            "/imgs/responsivegif/ex1.gif",
+            "/imgs/responsivegif/ex2.gif",
+            "/imgs/responsivegif/ex3.gif",
+            "/imgs/responsivegif/ex4.gif"
+        ],
+        "skills": [
+            "HTML5",
+            "HTML5 Canvas",
+            "CSS3",
+            "JavaScript",
+            "GSAP",
+            "NodeJS",
+            "Electron",
+            "jsGif"
+        ],
+        "software": [
+            "Visual Studio Code",
+            "Git",
+            "GitHub"
+        ],
+        "teamSize": 1,
+        "description": "Create a gif of your webpage to helps analyze your responsive design",
+        "details": [
+            "Captured images and used JavaScript to stitched them into a gif",
+            "Used Electrons event system to manage state between windows",
+            "Implemented several configuration options to allow the creation of a custom graphic"
+        ]
+    },
+    {
+        "name": "Dark Sky",
+        "type": "Web Game",
+        "dateStart": "2018-03-01",
+        "dateEnd": "2018-03-01",
+        "github": "https://github.com/davidc4747/dark-sky",
+        "codepen": "https://codepen.io/davidc4747/full/VXzPdz/",
+        "thumbnail": "/imgs/darksky/2018-03-24 10-45-35005.png",
+        "imgs": [
+            "/imgs/darksky/DarkSky-peck.gif",
+            "/imgs/darksky/2018-03-24 10-45-35005.png",
+            "/imgs/darksky/2018-03-24 10-45-35009.png",
+            "/imgs/darksky/2018-03-24 10-45-35109.png",
+            "/imgs/darksky/2018-03-24 10-45-35130.png",
+            "/imgs/darksky/2018-03-24 10-45-35177.png",
+            "/imgs/darksky/2018-03-24 10-45-35251.png",
+            "/imgs/darksky/2018-03-24 10-45-35338.png",
+            "/imgs/darksky/2018-03-24 10-45-35351.png",
+            "/imgs/darksky/2018-03-24 10-45-35425.png"
+        ],
+        "skills": [
+            "HTML5",
+            "HTML5 Canvas",
+            "CSS3",
+            "JavaScript",
+            "GSAP"
+        ],
+        "software": [
+            "Visual Studio Code",
+            "Git",
+            "GitHub"
+        ],
+        "teamSize": 1,
+        "description": "A game about spaceships fighting in the dark",
+        "details": [
+            "Built completely with vanilla JavaScript",
+            "Generated lighting effects using html5 canvas ‘compositeOpertation’",
+            "Created subtle light animations use the GreenSock library"
+        ]
+    },
+    {
         "name": "PDHI",
         "type": "Website",
-
         "dateStart": "2016-06-01",
         "dateEnd": "2017-09-01",
-
         "github": "",
-
         "thumbnail": "/imgs/pdhi/pdhi-svg.svg",
         "imgs": [
             "/imgs/pdhi/DonutChart-19.png",
@@ -17,23 +93,43 @@
             "/imgs/pdhi/TeamWire-2017-07-21/View.png",
             "/imgs/pdhi/PeerGroup/PG-Header-v2.png"
         ],
-
-        "skills": ["HTML5" , "CSS3" , "Less" , "Bootstrap" , "JavaScript" , "knockout.js" , "jQuery" , "D3.js" , "Node.js" , "Restful APIs" , "SQL" , "C#" , "ASP.NET" , "Agile" , "Scrum"],
-        "software": ["Git" , "NPM" , "JIRA" , "BitBucket" , "Confluence" , "Visual Studio" , "VS Code" , "SSMS"],
+        "skills": [
+            "HTML5",
+            "CSS3",
+            "Less",
+            "Bootstrap",
+            "JavaScript",
+            "knockout.js",
+            "jQuery",
+            "D3.js",
+            "Node.js",
+            "Restful APIs",
+            "SQL",
+            "C#",
+            "ASP.NET",
+            "Agile",
+            "Scrum"
+        ],
+        "software": [
+            "Git",
+            "NPM",
+            "JIRA",
+            "BitBucket",
+            "Confluence",
+            "Visual Studio",
+            "VS Code",
+            "SSMS"
+        ],
         "teamSize": 5,
         "description": "",
-        "details": [
-        ]
+        "details": []
     },
     {
         "name": "CareerClue",
         "type": "Website",
-
         "dateStart": "2015-07-01",
         "dateEnd": "2015-09-01",
-
         "github": "https://github.com/davidc4747/CareerClue",
-
         "thumbnail": "/imgs/careerclue/CarrerClue-logo.svg",
         "imgs": [
             "/imgs/careerclue/pic (1).png",
@@ -44,9 +140,22 @@
             "/imgs/careerclue/pic (6).png",
             "/imgs/careerclue/pic (7).png"
         ],
-
-        "skills": ["HTML5" , "CSS3" , "Sass" , "JavaScript" , "AngularJS" , "PHP" , "MySQL"],
-        "software": ["Sublime Text" , "Balsamiq" , "Git" , "GitHub" , "Grunt.js"],
+        "skills": [
+            "HTML5",
+            "CSS3",
+            "Sass",
+            "JavaScript",
+            "AngularJS",
+            "PHP",
+            "MySQL"
+        ],
+        "software": [
+            "Sublime Text",
+            "Balsamiq",
+            "Git",
+            "GitHub",
+            "Grunt.js"
+        ],
         "teamSize": 1,
         "description": "Job application management tool.",
         "details": [
@@ -57,12 +166,9 @@
     {
         "name": "MathChallenge",
         "type": "Website",
-
         "dateStart": "2015-03-01",
         "dateEnd": "2015-07-01",
-
         "github": "https://github.com/davidc4747/MathChallenge",
-
         "thumbnail": "/imgs/mathchallenge/MathChallenge-logo.svg",
         "imgs": [
             "/imgs/mathchallenge/pic1.png",
@@ -82,9 +188,23 @@
             "/imgs/mathchallenge/Screenshot 2015-08-26 09.39.51.png",
             "/imgs/mathchallenge/Screenshot 2015-09-14 13.33.26.png"
         ],
-
-        "skills": ["HTML" , "CSS3" , "Sass" , "JavaScript" , "AngularJS" , "D3.js" , "PHP" , "MySQL"],
-        "software": ["Sublime Text" , "Balsamiq" , "Git" , "GitHub" , "Grunt.js"],
+        "skills": [
+            "HTML",
+            "CSS3",
+            "Sass",
+            "JavaScript",
+            "AngularJS",
+            "D3.js",
+            "PHP",
+            "MySQL"
+        ],
+        "software": [
+            "Sublime Text",
+            "Balsamiq",
+            "Git",
+            "GitHub",
+            "Grunt.js"
+        ],
         "teamSize": 1,
         "description": "Math Challenge is a fun, simple, and addictive math game.",
         "details": [
@@ -97,12 +217,9 @@
     {
         "name": "CKB Horror",
         "type": "Windows Game",
-
         "dateStart": "2014-10-01",
         "dateEnd": "2014-10-01",
-
         "github": "https://github.com/mdwyer223/CKBHorror2.0",
-
         "thumbnail": "/imgs/ckb/ckb-horror-ss.png",
         "imgs": [
             "/imgs/ckb/Screenshot 2015-02-14 09.34.31.png",
@@ -113,9 +230,15 @@
             "/imgs/ckb/Screenshot 2015-02-14 09.35.21.png",
             "/imgs/ckb/Screenshot 2015-02-14 09.35.29.png"
         ],
-
-        "skills": ["C#", "XNA"],
-        "software": ["Visual Studio", "Git", "GitHub"],
+        "skills": [
+            "C#",
+            "XNA"
+        ],
+        "software": [
+            "Visual Studio",
+            "Git",
+            "GitHub"
+        ],
         "teamSize": 3,
         "description": "A Horror game about what happens when you fall asleep in class. Creep through a dark school building, pick up clues, and try to find your way out.",
         "details": [
@@ -125,12 +248,9 @@
     {
         "name": "Tow Def",
         "type": "Windows Game",
-
         "dateStart": "2015-01-01",
         "dateEnd": "2015-01-01",
-
         "github": "https://github.com/mdwyer223/BCATD",
-
         "thumbnail": "/imgs/towdef/TowDef-logo.png",
         "imgs": [
             "/imgs/towdef/Screenshot 2015-02-14 09.50.47.png",
@@ -150,9 +270,15 @@
             "/imgs/towdef/Screenshot 2015-02-14 10.14.34.png",
             "/imgs/towdef/Screenshot 2015-02-14 10.15.15.png"
         ],
-
-        "skills": ["C#", "XNA"],
-        "software": ["Visual Studio", "Git", "GitHub"],
+        "skills": [
+            "C#",
+            "XNA"
+        ],
+        "software": [
+            "Visual Studio",
+            "Git",
+            "GitHub"
+        ],
         "teamSize": 3,
         "description": "TowDef is a strategic tower defense game.",
         "details": [
@@ -163,12 +289,9 @@
     {
         "name": "Fhysics",
         "type": "Windows Game",
-
         "dateStart": "2014-02-01",
         "dateEnd": "2014-02-01",
-
         "github": "https://github.com/mdwyer223/Fhysics",
-
         "thumbnail": "/imgs/fhysics/Fhysics-logo.png",
         "imgs": [
             "/imgs/fhysics/Screenshot 2015-02-14 09.36.57.png",
@@ -196,9 +319,15 @@
             "/imgs/fhysics/Screenshot 2015-02-14 09.39.44.png",
             "/imgs/fhysics/Screenshot 2015-02-14 09.39.59.png"
         ],
-
-        "skills": ["C#", "XNA"],
-        "software": ["Visual Studio", "Git", "GitHub"],
+        "skills": [
+            "C#",
+            "XNA"
+        ],
+        "software": [
+            "Visual Studio",
+            "Git",
+            "GitHub"
+        ],
         "teamSize": 2,
         "description": "You play as a block, your goal is to beat the game's 14 puzzles as fast as possible, but if you get hit by a trap you'll be sent back to stage 1. How long will it take you?",
         "details": [
@@ -209,12 +338,9 @@
     {
         "name": "Adlez",
         "type": "Windows Game",
-
         "dateStart": "2013-09-01",
         "dateEnd": "2014-05-01",
-
         "github": "https://github.com/mdwyer223/SpecialTopics",
-
         "thumbnail": "/imgs/adlez/Screenshot 2015-02-13 12.21.50.png",
         "imgs": [
             "/imgs/adlez/Screenshot 2015-02-13 12.21.50.png",
@@ -230,9 +356,15 @@
             "/imgs/adlez/Screenshot 2015-02-13 12.26.12.png",
             "/imgs/adlez/Screenshot 2015-02-13 12.26.17.png"
         ],
-
-        "skills": ["C#", "XNA"],
-        "software": ["Visual Studio", "Git", "GitHub"],
+        "skills": [
+            "C#",
+            "XNA"
+        ],
+        "software": [
+            "Visual Studio",
+            "Git",
+            "GitHub"
+        ],
         "teamSize": 5,
         "description": "Adlez is a dungeon crawling RPG inspired by Zelda.",
         "details": [
@@ -244,12 +376,9 @@
     {
         "name": "MrSpotswood",
         "type": "Windows Form",
-
         "dateStart": "2013-03-01",
         "dateEnd": "2013-03-01",
-
         "github": "",
-
         "thumbnail": "/imgs/mrspotswood/Screenshot 2014-12-25 00.14.36.png",
         "imgs": [
             "/imgs/mrspotswood/Screenshot 2014-12-25 00.14.36.png",
@@ -270,9 +399,12 @@
             "/imgs/mrspotswood/Screenshot 2014-12-25 00.32.50.png",
             "/imgs/mrspotswood/Screenshot 2014-12-25 00.33.02.png"
         ],
-
-        "skills": ["Visual Basic.Net"],
-        "software": ["​Visual Studio"],
+        "skills": [
+            "Visual Basic.Net"
+        ],
+        "software": [
+            "​Visual Studio"
+        ],
         "teamSize": 2,
         "description": "Created a program used to tally scores, deal with ties, and display the winner of our high school pageant \"Mr. Spotswood.\" The judges found my program was easy to use, had a simple design, and displayed the winner graphically.",
         "details": [

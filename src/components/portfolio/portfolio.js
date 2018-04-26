@@ -3,7 +3,7 @@ import React from 'react';
 import './portfolio.css';
 
 
-let displayedProjects = ["CareerClue", "MathChallenge", "Tow Def", "ResponsiveGif", "DarkSky"];
+let displayedProjects = ["MathChallenge", "Tow Def", "ResponsiveGif", "Dark Sky"];
 
 export default ({ projects }) => (
     <section className="portfolio page-container">
