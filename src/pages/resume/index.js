@@ -21,7 +21,7 @@ export default ({ data }) => (
                 <div>San Francisco, CA</div>
                 <div>(908) 930-8054 | davidc4747@yahoo.com</div>
             </div>
-            <a className="btn btn--primary resume__download" href="./David-Chung.pdf" target="_blank">Download</a>
+            <a className="btn btn--primary resume__download" href="/David-Chung.pdf" target="_blank">Download</a>
         </header>
 
 
@@ -32,7 +32,7 @@ export default ({ data }) => (
         <Education schools={data.allEduJson.edges} />
 
         <div className="resume__btn-holder">
-            <a className="btn btn--primary resume__download" href="./David-Chung.pdf" target="_blank">Download</a>
+            <a className="btn btn--primary resume__download" href="/David-Chung.pdf" target="_blank">Download</a>
         </div>
 
         <Footer />
