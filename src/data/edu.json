@@ -1,63 +1,66 @@
 [
-    {
-        "name": "Udacity",
-        "logo": "/imgs/logos/udacity.png",
+  {
+    "name": "Front-End Masters",
+    "logo": "/imgs/logos/udacity.png",
 
-        "dateStart": "2013-12-01",
-        "dateEnd": "Present",
+    "dateStart": "2018-08-01",
+    "dateEnd": "Present",
 
-        "skills": [
-            "JavaScript",
-            "ReactJS",
-            "Ajax"
-        ]
-    },
-    {
-        "name": "Lynda.com",
-        "logo": "/imgs/logos/lynda.png",
+    "skills": ["JavaScript", "Unit-Testing", "Data Structures", "D3.js"]
+  },
+  {
+    "name": "Lynda.com",
+    "logo": "/imgs/logos/lynda.png",
 
-        "dateStart": "2015-04-01",
-        "dateEnd": "Present",
+    "dateStart": "2015-04-01",
+    "dateEnd": "Present",
 
-        "skills": [
-            "Angular",
-            "Node.js",
-            "D3.js",
-            "ReactJS",
-            "WebPack",
-            "Bootstrap",
-            "Restful APIs",
-            "PostCSS"
-        ]
-    },
-    {
-        "name": "PluralSight",
-        "logo": "/imgs/logos/pluralsight.png",
+    "skills": [
+      "Angular",
+      "Node.js",
+      "D3.js",
+      "ReactJS",
+      "WebPack",
+      "Bootstrap",
+      "Restful APIs",
+      "PostCSS"
+    ]
+  },
+  {
+    "name": "PluralSight",
+    "logo": "/imgs/logos/pluralsight.png",
 
-        "dateStart": "2015-04-01",
-        "dateEnd": "Present",
+    "dateStart": "2015-04-01",
+    "dateEnd": "Present",
 
-        "skills": [
-            "JavaScript",
-            "JS Design Patterns",
-            "AJAX",
-            "CSS3",
-            "Sass",
-            "Less",
-            "ASP.NET MVC",
-            "knockout.js"
-        ]
-    },
-    {
-        "name": "NJIT",
-        "logo": "/imgs/logos/weird-njit.jpg",
+    "skills": [
+      "JavaScript",
+      "JS Design Patterns",
+      "AJAX",
+      "CSS3",
+      "Sass",
+      "Less",
+      "BEM",
+      "ASP.NET MVC",
+      "knockout.js"
+    ]
+  },
+  {
+    "name": "Udacity",
+    "logo": "/imgs/logos/udacity.png",
 
-        "dateStart": "2014-09-01",
-        "dateEnd": "2015-04-01",
+    "dateStart": "2013-12-01",
+    "dateEnd": "Present",
 
-        "skills": [
-            "Computer Science",
-            "Web Development"
-        ]
-    }
+    "skills": ["JavaScript", "ReactJS", "Ajax"]
+  },
+  {
+    "name": "NJIT",
+    "logo": "/imgs/logos/weird-njit.jpg",
+
+    "dateStart": "2014-09-01",
+    "dateEnd": "2015-04-01",
+
+    "skills": ["Computer Science", "Web Development"]
+  }
 ]

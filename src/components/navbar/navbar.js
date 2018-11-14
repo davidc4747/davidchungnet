@@ -14,7 +14,7 @@ export default () => (
         <i className="navbar__icon fa fa-briefcase" /> Resume
       </li>
     </Link>
-    <Link to="/projects/">
+    {/* <Link to="/projects/">
       <li className="navbar__item">
         <i className="navbar__icon fa fa-code" /> Projects
       </li>
@@ -23,6 +23,6 @@ export default () => (
       <li className="navbar__item">
         <i className="navbar__icon fa fa-compass" /> FAQ
       </li>
-    </Link>
+    </Link> */}
   </ul>
 )

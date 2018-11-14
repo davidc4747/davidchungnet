@@ -1,72 +1,61 @@
-
-
 /*=======================*\
     #Form
 \*=======================*/
 
 .btn {
-    padding: 0.8rem 1.6rem;
-    border: none;
-    border-radius: 5px;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  border-radius: 5px;
 
-    transition: color 0.25s ease-out,
-                background-color 0.25s ease-out,
-                transform 0.25s ease-out; 
+  transition: color 0.25s ease-out, background-color 0.25s ease-out,
+    transform 0.25s ease-out;
 
-    &:hover {
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .btn--primary {
+  color: var(--white);
+  background-color: var(--primary);
+
+  &:hover {
     color: var(--white);
-    background-color: var(--primary);
-
-    &:hover {
-        color: var(--white);
-        background-color: var(--secondary);        
-    }
+    background-color: var(--secondary);
+  }
 }
-
-
-
-
 
 /*=======================*\
     #Helper classes
 \*=======================*/
 
 .highlight {
-    color: var(--highlight);
+  color: var(--highlight);
 }
 
 .list-unstyled {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 .icon {
-    margin: 0.4rem 0.3rem;
+  margin: 0.4rem 0.3rem;
 }
 
 .full-width {
-    width: 100%;
+  width: 100%;
 }
-
-
-
-
 
 /*=======================*\
     #Page Styles
 \*=======================*/
 
 .page-header {
-    padding: 0.4rem 0;
-    margin: 1rem 3%;
-    font-size: 2.8rem;
-    text-align: center;
+  padding: 0.4rem 0;
+  margin: 1rem 3%;
+  font-size: 2.8rem;
+  text-align: center;
 }
 
 /* .page-header {    
@@ -89,65 +78,55 @@
 } */
 
 .page-container,
-.page-header {   
-    display: block;
-    margin: 0 auto;
-    width: 95%;
-    max-width: 1100px;
+.page-header {
+  display: block;
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1300px;
 }
-
-
-
-
-
 
 /*=======================*\
     #Card
 \*=======================*/
 
 .card {
-    margin: 0.7rem;
-    padding: 1.3rem;
-    background-color: var(--primary);
+  margin: 0.7rem;
+  padding: 1.3rem;
+  background-color: var(--primary);
 
-    border-radius: 4px;
-    box-shadow: 16px 16px 1rem rgba(0, 0, 0, 0.10);
+  border-radius: 4px;
+  box-shadow: 16px 16px 1rem rgba(0, 0, 0, 0.1);
 
+  &__title {
+    display: flex;
+    align-items: center;
 
-    &__title {
-        display: flex;
-        align-items: center;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--lowlight);
+  }
 
-        padding-bottom: 0.4rem;
-        border-bottom: 1px solid var(--lowlight);
-    }
-
-    &__body {
-        margin: 0.4rem 0;
-    }
+  &__body {
+    margin: 0.4rem 0;
+  }
 }
-
-
-
-
 
 /*=======================*\
     #Tag
 \*=======================*/
 
 .tag-list {
-    display: inline-block;
-    padding: 0;
-    margin: 0;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
 .tag {
-    display: inline-block;
-    padding: 0.3rem 0.5rem;
-    margin: 0.2rem;
+  display: inline-block;
+  padding: 0.3rem 0.5rem;
+  margin: 0.2rem;
 
-    background-color: var(--primary);
-    border-radius: 4px;
+  background-color: var(--primary);
+  border-radius: 4px;
 
-    font-size: 11px;
+  font-size: 11px;
 }
