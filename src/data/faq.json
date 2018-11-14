@@ -1,7 +1,7 @@
 [
     {
         "question": "Tell me a little about yourself",
-        "answer": "Well... That’s a long story..."
+        "answer": "That's a longer story"
     },
     {
         "question": "What programming languages are you most experienced in?",
@@ -21,7 +21,7 @@
     },
     {
         "question": "What project are you most proud? Why?",
-        "answer": "MathChallenge for sure. I failed so0o0o0o0o many times while making that project. Out of my entire portfolio, it’s definity the one I learned the most from and it help jump start my skills as a web developer. Both Backend and FrontEnd."
+        "answer": "MathChallenge for sure. I failed so many times while making that project. Out of my entire portfolio, it’s definity the one I learned the most from and it help jump start my skills as a web developer. Both Backend and FrontEnd."
     },
     {
         "question": "Would you be willing to commute to San Jose?",
