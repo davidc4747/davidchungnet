@@ -4,7 +4,7 @@ import './education.css';
 
 export default ({ schools }) => (
     <section className="edu page-container">
-        <h2 className="resume__title">{/* <span className="icon fa fa-book"></span> */} Education</h2>
+        {/* <h2 className="resume__title"><span className="icon fa fa-book"></span> Education</h2> */}
         <div className="school-list">
             {schools.map(({ node: school }, index) =>
                 <div className="school" key={index}>
