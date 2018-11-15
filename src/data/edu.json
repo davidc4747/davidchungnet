@@ -1,7 +1,8 @@
 [
   {
-    "name": "Front-End Masters",
-    "logo": "/imgs/logos/udacity.png",
+    "name": "Frontend Masters",
+    "url": "https://frontendmasters.com/",
+    "logo": "/imgs/logos/frontend-masters.png",
 
     "dateStart": "2018-08-01",
     "dateEnd": "Present",
@@ -10,6 +11,7 @@
   },
   {
     "name": "Lynda.com",
+    "url": "https://www.lynda.com/",
     "logo": "/imgs/logos/lynda.png",
 
     "dateStart": "2015-04-01",
@@ -28,6 +30,7 @@
   },
   {
     "name": "PluralSight",
+    "url": "https://www.pluralsight.com/",
     "logo": "/imgs/logos/pluralsight.png",
 
     "dateStart": "2015-04-01",
@@ -47,6 +50,7 @@
   },
   {
     "name": "Udacity",
+    "url": "https://www.udacity.com/",
     "logo": "/imgs/logos/udacity.png",
 
     "dateStart": "2013-12-01",
@@ -56,6 +60,7 @@
   },
   {
     "name": "NJIT",
+    "url": "https://www.njit.edu/",
     "logo": "/imgs/logos/weird-njit.jpg",
 
     "dateStart": "2014-09-01",

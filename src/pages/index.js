@@ -114,6 +114,7 @@ export const query = graphql`
         node {
           logo
           name
+          url
           skills
         }
       }
