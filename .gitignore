@@ -1,3 +1,6 @@
+# Large Files
+*.mp4
+
 # Project dependencies
 .cache
 
