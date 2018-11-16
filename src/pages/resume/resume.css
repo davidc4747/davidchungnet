@@ -1,25 +1,20 @@
-@import "../../styles/variables.scss";
+@import '../../styles/variables.scss';
 
 /*=======================*\
     #Resume
 \*=======================*/
 
-
 .resume {
-
     &__title {
         margin: 2rem 0 0;
         padding: 0.4rem 0;
         border-bottom: 1px solid var(--primary);
-    
+
         color: var(--highlight);
         text-transform: uppercase;
         font-size: 1.8rem;
     }
 
-
-
-    
     /*-----------------------*\
         #Header
     \*-----------------------*/
@@ -30,7 +25,7 @@
 
         padding-top: 2rem;
 
-        @media(max-width: 40rem) {
+        @media (max-width: 40rem) {
             flex-direction: column;
         }
     }
@@ -38,7 +33,7 @@
     &__info {
         flex-grow: 2;
 
-        @media(max-width: 40rem) {
+        @media (max-width: 40rem) {
             margin-bottom: 2rem;
             align-self: stretch;
         }
@@ -56,15 +51,12 @@
             height: 28%;
             z-index: -5;
 
-
             position: absolute;
             left: -3%;
             bottom: 12%;
         }
     }
 
-
-    
     /*-----------------------*\
         #Download Button
     \*-----------------------*/
@@ -81,18 +73,14 @@
 
         color: var(--white);
         background-color: var(--highlight);
-    
+
         &:hover {
             color: var(--white);
-            background-color: var(--highlight);      
+            background-color: var(--highlight);
             transform: scale(1.05);
         }
     }
 
-
-
-
-    
     /*-----------------------*\
         #Resume list
     \*-----------------------*/

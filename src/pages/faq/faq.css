@@ -1,5 +1,4 @@
-
-@import "../../styles/variables.scss";
+@import '../../styles/variables.scss';
 
 /*=======================*\
     #FAQ
@@ -9,15 +8,13 @@
     margin: 0 auto;
 }
 
-
 .faq-item {
     margin: 0.7rem;
     padding: 1.3rem;
     background-color: var(--primary);
 
     border-radius: 4px;
-    box-shadow: 16px 16px 1rem rgba(0, 0, 0, 0.10);
-
+    box-shadow: 16px 16px 1rem rgba(0, 0, 0, 0.1);
 
     &__question {
         padding-bottom: 0.4rem;
@@ -28,8 +25,6 @@
         margin: 0.4rem 0;
     }
 }
-
-
 
 /* Grid */
 /* @supports (display: grid) {

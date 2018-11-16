@@ -1,5 +1,4 @@
-
-@import "../../styles/variables.scss";
+@import '../../styles/variables.scss';
 
 /*=======================*\
     #Header
@@ -17,7 +16,7 @@
         display: flex;
         align-items: flex-end;
 
-        @media(max-width: 760px) {
+        @media (max-width: 760px) {
             align-items: center;
             flex-direction: column;
         }
@@ -31,8 +30,6 @@
         font-size: 3.5rem;
     }
 
-
-
     /*-------------------------*\
         #Social
     \*-------------------------*/
@@ -41,8 +38,9 @@
         display: flex;
         margin-left: auto;
         margin-right: 1.2rem;
+        padding: 0.4rem 0;
 
-        @media(max-width: 760px) {
+        @media (max-width: 760px) {
             margin: 1.2rem;
         }
     }
@@ -58,8 +56,6 @@
         }
     }
 
-
-
     /*-------------------------*\
         #Contact
     \*-------------------------*/
@@ -74,12 +70,7 @@
     &__contact-item {
         padding: 0.4rem 1rem;
     }
-
 }
-
-
-
-
 
 /*-------------------------*\
     #Header Positioning
@@ -91,39 +82,40 @@
     align-items: center;
     text-align: center;
 
-
     & > * {
         margin: 0.4rem;
     }
 
-    @media(min-width: 500px) {
+    @media (min-width: 500px) {
         flex-flow: row wrap;
     }
-    @media(min-width: 900px) {
+    @media (min-width: 900px) {
         align-items: flex-start;
     }
-    @media(min-width: 1300px) {
+    @media (min-width: 1300px) {
         width: 70%;
         margin: 0 auto;
     }
-
 
     /*-------------------------*\
         #Top
     \*-------------------------*/
 
-     &__top {
+    &__top {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
 
-
-        @media(min-width: 500px) {
+        @media (min-width: 500px) {
             width: 50%;
             flex: 1;
         }
-        @media(min-width: 850px) { justify-content: space-between; }
-        @media(min-width: 900px) { margin-top: 2.3rem; }
+        @media (min-width: 850px) {
+            justify-content: space-between;
+        }
+        @media (min-width: 900px) {
+            margin-top: 2.3rem;
+        }
     }
 
     &__headshot {
@@ -133,14 +125,14 @@
         max-width: 200px;
         z-index: 5;
 
-        @media(min-width: 500px) { width: 50%;}
+        @media (min-width: 500px) {
+            width: 50%;
+        }
     }
 
     &__name {
         text-align: center;
     }
-
-
 
     /*-------------------------*\
         #Contact
@@ -153,11 +145,13 @@
         flex-wrap: wrap;
         justify-content: center;
 
-
-
-        @media(min-width: 500px) { width: 100%; }
-        @media(min-width: 650px) { justify-content: space-between; }
-        @media(min-width: 900px) {
+        @media (min-width: 500px) {
+            width: 100%;
+        }
+        @media (min-width: 650px) {
+            justify-content: space-between;
+        }
+        @media (min-width: 900px) {
             padding-left: 230px;
             transform: translateY(-200%);
         }
@@ -167,7 +161,4 @@
         width: auto;
         text-align: center;
     }
-
-
-
 }

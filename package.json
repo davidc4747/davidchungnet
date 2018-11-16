@@ -12,14 +12,12 @@
         "gatsby-transformer-json": "^1.0.16",
         "react-helmet": "^5.2.0"
     },
-    "keywords": [
-        "gatsby"
-    ],
+    "keywords": ["gatsby"],
     "license": "MIT",
     "scripts": {
         "build": "gatsby build",
         "develop": "gatsby develop",
-        "format": "prettier --write 'src/**/*.js'",
+        "format": "prettier --write \"./src/**/*.js\" \"./src/**/*.css\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "devDependencies": {
