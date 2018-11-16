@@ -62,10 +62,13 @@
         object-fit: contain;
         border-radius: 3px;
         background-color: var(--secondary);
+        cursor: pointer;
     }
 
     &__project__link {
         float: right;
+        background-color: transparent;
+        border: none;
 
         margin-right: auto;
         color: var(--lowlight);

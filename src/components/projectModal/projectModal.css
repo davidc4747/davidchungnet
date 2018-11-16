@@ -1,0 +1,57 @@
+/*========================*\
+    #Modal
+\*========================*/
+
+.project-modal {
+    display: none;
+    position: fixed;
+    z-index: 15;
+    width: 100vw;
+    height: 100vh;
+
+    /*------------------------*\
+        #Modal States
+    \*------------------------*/
+
+    &--shown {
+        display: block;
+    }
+
+    &--hidden {
+        display: none;
+    }
+
+    /*------------------------*\
+        #Overlay
+    \*------------------------*/
+
+    &__overlay {
+        position: absolute;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100vw;
+        height: 100vh;
+    }
+
+    /*------------------------*\
+        #Content
+    \*------------------------*/
+
+    &__content {
+        /* Center  Model Content in the screen */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        /* Style the look of modal window */
+        width: 90%;
+        background-color: #fbfbfb;
+        border-radius: 5px;
+        padding: 1rem 0.2rem;
+    }
+
+    &__header {
+        color: #000;
+    }
+}
