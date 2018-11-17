@@ -1,0 +1,43 @@
+/*========================*\
+    #Carousel
+\*========================*/
+
+.carousel {
+    /* stuff */
+
+    &__main-img {
+        width: 100%;
+        max-height: 680px;
+
+        object-fit: contain;
+    }
+
+    /*------------------------*\
+        #Nav
+    \*------------------------*/
+
+    &__nav {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__nav-item {
+        width: 16px;
+        height: 16px;
+
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 1px solid #fbfbfb;
+
+        /* Selected Styling */
+        &--selected {
+            background-color: red;
+        }
+
+        /* Hover Styling */
+        &:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 1);
+        }
+    }
+}

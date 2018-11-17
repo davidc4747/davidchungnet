@@ -46,12 +46,14 @@
 
         /* Style the look of modal window */
         width: 90%;
+        color: #000;
         background-color: #fbfbfb;
         border-radius: 5px;
-        padding: 1rem 0.2rem;
     }
 
     &__header {
-        color: #000;
+    }
+
+    &__carousel {
     }
 }

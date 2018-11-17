@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 import './projectModal.css';
 
+import ImageCarousel from '../imageCarousel/imageCarousel';
+
 class ProjectModal extends Component {
     render() {
         let { project, isOpen, closeModal } = this.props;
@@ -15,11 +17,9 @@ class ProjectModal extends Component {
                 <div className="project-modal__overlay" onClick={closeModal} />
                 <div className="project-modal__content">
                     <h1 className="project-modal__header">{project.name}</h1>
-                    <ul className="project-modal__carousel">
-                        <li>
-                            <img src="#" alt="" />
-                        </li>
-                    </ul>
+                    <div className="project-modal__carousel">
+                        <ImageCarousel images={project.imgs || []} />
+                    </div>
                     <div className="project-modal__body">.</div>
                 </div>
             </section>
