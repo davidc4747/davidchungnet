@@ -26,7 +26,31 @@ class ProjectModal extends Component {
                     <div className="project-modal__carousel">
                         <ImageCarousel images={project.imgs || []} />
                     </div>
-                    {/* <div className="project-modal__body">.</div> */}
+                    <p className="project-modal__body">
+                        <span className="highlight">Description: </span>
+                        {project.description}
+                        <section>
+                            <span className="highlight">Skills:</span>
+                            <ul className="tag-list list-unstyled">
+                                {(project.skills || []).map((skill, index) => (
+                                    <li className="tag" key={index}>
+                                        {skill}
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+
+                        <section>
+                            <span className="highlight">Software:</span>
+                            <ul className="tag-list list-unstyled">
+                                {(project.software || []).map((soft, index) => (
+                                    <li className="tag" key={index}>
+                                        {soft}
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    </p>
                 </div>
             </section>
         );

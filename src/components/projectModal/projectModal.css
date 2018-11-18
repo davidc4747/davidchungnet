@@ -74,4 +74,8 @@
 
     &__carousel {
     }
+
+    &__body {
+        padding: 0.9rem 1.3rem;
+    }
 }
