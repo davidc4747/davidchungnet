@@ -38,22 +38,24 @@ class Carousel extends Component {
 
         return (
             <div className="carousel">
-                {/* Current Image */}
-                <img
-                    className="carousel__main-img"
-                    src={images[currentImageIndex]}
-                    alt=""
-                />
+                <section className="carousel__image-container">
+                    {/* Current Image */}
+                    <img
+                        className="carousel__main-image"
+                        src={images[currentImageIndex]}
+                        alt=""
+                    />
 
-                {/* Next & Prev */}
-                <div className="carousel__controls">
-                    <button className="carousel__control" onClick={this.prevImage}>
-                        <i className="fa fa-angle-left" />
-                    </button>
-                    <button className="carousel__control" onClick={this.nextImage}>
-                        <i className="fa fa-angle-right" />
-                    </button>
-                </div>
+                    {/* Next & Prev */}
+                    <div className="carousel__controls">
+                        <button className="carousel__control" onClick={this.prevImage}>
+                            <i className="fa fa-angle-left" />
+                        </button>
+                        <button className="carousel__control" onClick={this.nextImage}>
+                            <i className="fa fa-angle-right" />
+                        </button>
+                    </div>
+                </section>
 
                 {/* Nav buttons */}
                 <section className="carousel__nav">
