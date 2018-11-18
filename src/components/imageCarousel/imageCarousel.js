@@ -46,8 +46,14 @@ class Carousel extends Component {
                 />
 
                 {/* Next & Prev */}
-                <button onClick={this.prevImage}>Prev</button>
-                <button onClick={this.nextImage}>Next</button>
+                <div className="carousel__controls">
+                    <button className="carousel__control" onClick={this.prevImage}>
+                        <i className="fa fa-angle-left" />
+                    </button>
+                    <button className="carousel__control" onClick={this.nextImage}>
+                        <i className="fa fa-angle-right" />
+                    </button>
+                </div>
 
                 {/* Nav buttons */}
                 <section className="carousel__nav">
