@@ -16,7 +16,6 @@ class Home extends Component {
     };
 
     closeModal = () => {
-        console.log('closemeeeee!!!');
         this.setState({
             modalIsOpen: false,
             modalProject: {}
