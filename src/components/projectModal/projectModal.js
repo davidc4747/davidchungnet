@@ -16,11 +16,17 @@ class ProjectModal extends Component {
             >
                 <div className="project-modal__overlay" onClick={closeModal} />
                 <div className="project-modal__content">
-                    <h1 className="project-modal__header">{project.name}</h1>
+                    <h1 className="project-modal__header">
+                        {project.name}
+                        <i
+                            className="project-modal__close icon fa fa-times"
+                            onClick={closeModal}
+                        />
+                    </h1>
                     <div className="project-modal__carousel">
                         <ImageCarousel images={project.imgs || []} />
                     </div>
-                    <div className="project-modal__body">.</div>
+                    {/* <div className="project-modal__body">.</div> */}
                 </div>
             </section>
         );

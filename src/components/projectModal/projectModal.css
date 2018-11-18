@@ -28,7 +28,7 @@
     &__overlay {
         position: absolute;
         cursor: pointer;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.7);
         width: 100vw;
         height: 100vh;
     }
@@ -48,10 +48,28 @@
         width: 90%;
         color: #000;
         background-color: #fbfbfb;
-        border-radius: 5px;
+        border-radius: 4px;
     }
 
     &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        font-size: 2rem;
+        padding: 0.3rem 0.4rem;
+
+        width: 100%;
+        position: absolute;
+        transform: translateY(-100%);
+        color: #fbfbfb;
+    }
+    &__close {
+        cursor: pointer;
+
+        &:hover {
+            color: #c8c8c8;
+        }
     }
 
     &__carousel {
