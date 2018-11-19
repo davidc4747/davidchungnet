@@ -132,6 +132,8 @@ export const query = graphql`
                     software
                     description
                     details
+                    github
+                    codepen
                 }
             }
         }

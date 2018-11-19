@@ -74,13 +74,13 @@
         flex-wrap: wrap;
 
         background-color: #c8c8c8;
-        padding: 0.7rem 0.4rem;
+        padding: 0.5rem 0.4rem;
         margin-top: -0.3rem;
     }
 
     &__nav-item {
-        width: 20px;
-        height: 20px;
+        width: 16px;
+        height: 16px;
 
         border-radius: 50%;
         background-color: rgba(0, 0, 0, 0.4);
@@ -93,7 +93,7 @@
         /* Selected Styling */
         &--selected {
             background-color: blue;
-            transform: scale(1.4);
+            transform: scale(1.5);
         }
 
         /* Hover Styling */

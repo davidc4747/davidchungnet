@@ -29,7 +29,7 @@ class ProjectModal extends Component {
                     <div className="project-modal__body">
                         <span className="highlight">Description: </span>
                         {project.description}
-                        <section>
+                        <section className="v-center">
                             <span className="highlight">Skills:</span>
                             <ul className="tag-list list-unstyled">
                                 {project.skills &&
@@ -41,7 +41,7 @@ class ProjectModal extends Component {
                             </ul>
                         </section>
 
-                        <section>
+                        <section className="v-center">
                             <span className="highlight">Software:</span>
                             <ul className="tag-list list-unstyled">
                                 {project.software &&
@@ -52,6 +52,38 @@ class ProjectModal extends Component {
                                     ))}
                             </ul>
                         </section>
+
+                        {/* External Links */}
+                        {project.github && (
+                            <a
+                                target="_blank"
+                                rel="nofollow"
+                                href={project.github}
+                                className="project-modal__link"
+                            >
+                                <i className="fab fa-github" />
+                            </a>
+                        )}
+                        {project.codepen && (
+                            <a
+                                target="_blank"
+                                rel="nofollow"
+                                href={project.codepen}
+                                className="project-modal__link"
+                            >
+                                <i className="fab fa-codepen" />
+                            </a>
+                        )}
+                        {project.youtube && (
+                            <a
+                                target="_blank"
+                                rel="nofollow"
+                                href={project.youtube}
+                                className="project-modal__link"
+                            >
+                                <i className="fab fa-youtube" />
+                            </a>
+                        )}
                     </div>
                 </div>
             </section>
