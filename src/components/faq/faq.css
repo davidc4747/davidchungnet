@@ -1,0 +1,42 @@
+@import "../../styles/variables.css";
+
+/*=======================*\
+    #FAQ
+\*=======================*/
+
+.faq-list {
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin: 0.7rem;
+    padding: 1.3rem;
+    background-color: var(--primary);
+
+    border-radius: 4px;
+    box-shadow: 16px 16px 1rem rgba(0, 0, 0, 0.1);
+
+    &__question {
+        padding-bottom: 0.4rem;
+        border-bottom: 1px solid var(--lowlight);
+    }
+
+    &__answer {
+        margin: 0.4rem 0;
+    }
+}
+
+/* Grid */
+/* @supports (display: grid) {
+    .faq-list {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(0px, 500px));
+        justify-content: center;
+        
+        max-width: 100vw;
+    }
+    .faq-item {
+        margin: 0;
+    }
+} */

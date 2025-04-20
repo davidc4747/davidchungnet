@@ -1,0 +1,57 @@
+/*=======================*\
+    #Education
+\*=======================*/
+/* 
+.edu {
+    @media(min-width: 900px) {
+        width: 70%;
+        margin: 0 auto;
+    }
+} */
+
+/*=======================*\
+    #School list
+\*=======================*/
+
+.school-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--primary);
+    border-bottom: 1px solid var(--primary);
+
+    @media (max-width: 40rem) {
+        flex-direction: column;
+    }
+}
+
+.school {
+    padding: 1rem 0.3rem;
+    width: 24%;
+    text-align: center;
+
+    & + & {
+        border-left: 1px solid var(--primary);
+    }
+
+    @media (max-width: 40rem) {
+        width: 100%;
+
+        & + & {
+            border: none;
+            border-top: 1px solid var(--primary);
+        }
+    }
+
+    &__logo {
+        display: inline-block;
+        margin: 0.4rem 0;
+
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    &__name {
+        margin: 0.5rem 0;
+    }
+}
