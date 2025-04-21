@@ -1,26 +1,28 @@
-/*=======================*\
-    #Helper classes
-\*=======================*/
+@layer utils {
+    /*=======================*\
+        #Helper classes
+    \*=======================*/
 
-.highlight {
-    color: var(--highlight);
-}
+    .highlight {
+        color: var(--highlight);
+    }
 
-.list-unstyled {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-}
+    .list-unstyled {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+    }
 
-.v-center {
-    display: flex;
-    align-items: center;
-}
+    .v-center {
+        display: flex;
+        align-items: center;
+    }
 
-.icon {
-    margin: 0.6rem 0.5rem;
-}
+    .icon {
+        margin: 0.6rem 0.5rem;
+    }
 
-.full-width {
-    width: 100%;
+    .full-width {
+        width: 100%;
+    }
 }
