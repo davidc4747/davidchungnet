@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import styles from "./index.module.css";
 
 import Header from "../components/header/header";
 import Workexp from "../components/workexp/workexp";
@@ -9,35 +10,38 @@ import Portfolio from "~/components/portfolio/portfolio";
 
 export default component$(() => {
     return (
-        <main class="resume">
+        <main>
             <Header />
 
             {/* Work Experience */}
-            <h1 class="home__header">
+            <h1 class={styles.sectionHeader}>
                 <i class="icon fa fa-briefcase" />
                 Work Experience
             </h1>
             <Workexp />
 
             {/* Projects */}
-            <h1 class="home__header">
+            <h1 class={styles.sectionHeader}>
                 <i class="icon fa fa-code" />
                 Projects
             </h1>
             <Portfolio />
 
             {/* Education */}
-            <h1 class="home__header">
+            <h1 class={styles.sectionHeader}>
                 <i class="icon fa fa-book" />
                 Education
             </h1>
             {/* <Education schools={data.allEduJson.edges} /> */}
             <Education />
 
+            {/* FAQs */}
+            <Faq />
+
             {/* Download Button */}
-            <section class="resume__btn-holder">
+            <section class={styles.downloadContainer}>
                 <a
-                    class="btn btn--primary resume__download"
+                    class={[styles.download, "btn btn--primary"]}
                     href="/David-Chung.pdf"
                     target="_blank"
                 >
@@ -45,11 +49,8 @@ export default component$(() => {
                 </a>
             </section>
 
-            {/* FAQs */}
-            <Faq />
-
             {/* Footer */}
-            <footer class="footer" />
+            <footer class={styles.footer} />
         </main>
     );
 });

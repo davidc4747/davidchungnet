@@ -1,0 +1,51 @@
+/*========================*\
+    #Work Experience
+\*========================*/
+
+.workexp {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*------------------------*\
+    #Header
+\*------------------------*/
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    margin-bottom: 1rem;
+}
+
+.img {
+    display: block;
+
+    border-radius: 4px;
+
+    flex: 0;
+    width: 30%;
+    max-width: 100px;
+}
+
+/*-------------------------*\
+    #Body
+\*-------------------------*/
+
+.company {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.position {
+    font-weight: normal;
+}
+.date {
+    font-style: italic;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.details {
+    margin: 0;
+}

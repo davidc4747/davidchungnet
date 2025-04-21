@@ -5,6 +5,7 @@
 
     .highlight {
         color: var(--highlight);
+        font-weight: bold;
     }
 
     .list-unstyled {

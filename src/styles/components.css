@@ -77,18 +77,17 @@
 
         border-radius: 4px;
         box-shadow: 16px 16px 1rem rgba(0, 0, 0, 0.1);
+    }
+    .card__title {
+        display: flex;
+        align-items: center;
 
-        &__title {
-            display: flex;
-            align-items: center;
+        padding-bottom: 0.4rem;
+        border-bottom: 1px solid var(--lowlight);
+    }
 
-            padding-bottom: 0.4rem;
-            border-bottom: 1px solid var(--lowlight);
-        }
-
-        &__body {
-            margin: 0.4rem 0;
-        }
+    .card__body {
+        margin: 0.4rem 0;
     }
 
     /*=======================*\
