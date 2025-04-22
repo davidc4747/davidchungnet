@@ -9,6 +9,8 @@ export default component$(() => {
                 class={styles.headshot}
                 src={mypic}
                 alt="Image of David Chung"
+                width={200}
+                height={200}
             />
 
             <h1 class={styles.myName}>David Chung</h1>

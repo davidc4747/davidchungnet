@@ -48,4 +48,8 @@
 
 .details {
     margin: 0;
+
+    & > li {
+        margin: 0.3rem 0;
+    }
 }

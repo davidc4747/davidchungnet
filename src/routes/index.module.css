@@ -9,69 +9,17 @@
     text-align: center;
 }
 
-.home {
-    &__link {
-        padding: 0 1rem;
-        margin-right: auto;
+.home__link {
+    padding: 0 1rem;
+    margin-right: auto;
 
-        color: var(--lowlight);
-        font-size: 0.9rem;
-        text-align: right;
+    color: var(--lowlight);
+    font-size: 0.9rem;
+    text-align: right;
 
-        &:hover {
-            cursor: pointer;
-            text-decoration: underline;
-        }
-    }
-
-    /*----------------------*\
-        #Project Preview
-    \*----------------------*/
-
-    &__project-list {
-        @supports (display: grid) {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            align-items: center;
-        }
-    }
-
-    &__project {
-        margin: 1.1rem 0.9rem;
-        border-radius: 4px;
-    }
-
-    &__project__title {
-        display: flex;
-        align-items: center;
-
-        padding-bottom: 0.4rem;
-    }
-
-    &__project__body {
-    }
-
-    &__project__thumbnail {
-        height: 300px;
-        object-fit: contain;
-        border-radius: 3px;
-        background-color: var(--secondary);
+    &:hover {
         cursor: pointer;
-    }
-
-    &__project__link {
-        float: right;
-        background-color: transparent;
-        border: none;
-
-        margin-right: auto;
-        color: var(--lowlight);
-        font-size: 0.8rem;
-
-        &:hover {
-            cursor: pointer;
-            text-decoration: underline;
-        }
+        text-decoration: underline;
     }
 }
 

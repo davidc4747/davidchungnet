@@ -1,0 +1,45 @@
+/*=======================*\
+    #Project Preview
+\*=======================*/
+
+.projectList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    align-items: center;
+
+    list-style-type: none;
+    padding: 0;
+}
+
+.project {
+    margin: 1.1rem 0.9rem;
+    border-radius: 4px;
+}
+
+.title {
+    padding-bottom: 0.4rem;
+}
+
+.thumbnail {
+    height: 300px;
+    object-fit: contain;
+    border-radius: 4px;
+    background-color: var(--secondary);
+}
+
+.link {
+    float: right;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.link2 {
+    float: right;
+    background-color: transparent;
+    border: none;
+
+    margin-right: auto;
+    color: var(--lowlight);
+    font-size: 0.8rem;
+}
