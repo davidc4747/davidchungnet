@@ -1,19 +1,8 @@
 /*=======================*\
-    #Education
-\*=======================*/
-/* 
-.edu {
-    @media(min-width: 900px) {
-        width: 70%;
-        margin: 0 auto;
-    }
-} */
-
-/*=======================*\
     #School list
 \*=======================*/
 
-.school-list {
+.schoolList {
     display: flex;
     justify-content: center;
     border-top: 1px solid var(--primary);
@@ -41,17 +30,16 @@
             border-top: 1px solid var(--primary);
         }
     }
+}
+.logo {
+    display: inline-block;
+    margin: 0.4rem 0;
 
-    &__logo {
-        display: inline-block;
-        margin: 0.4rem 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
 
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-    }
-
-    &__name {
-        margin: 0.5rem 0;
-    }
+.name {
+    margin: 0.5rem 0;
 }

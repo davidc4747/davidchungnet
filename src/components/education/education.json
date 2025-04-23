@@ -1,0 +1,87 @@
+[
+    {
+        "name": "Egghead.io",
+        "url": "https://egghead.io/",
+        "logo": "/images/logos/egghead.svg",
+
+        "dateStart": "2019-12-15",
+        "dateEnd": "Present",
+
+        "skills": ["Cypress", "tailwind", "bash"]
+    },
+    {
+        "name": "Frontend Masters",
+        "url": "https://frontendmasters.com/",
+        "logo": "/images/logos/frontend-masters.png",
+
+        "dateStart": "2018-08-29",
+        "dateEnd": "Present",
+
+        "skills": [
+            "Qwik",
+            "React",
+            "Cypress",
+            "Jest",
+            "TypeScript",
+            "D3.js",
+            "Rust",
+            "Elm"
+        ]
+    },
+    {
+        "name": "Linkedin Learning",
+        "url": "https://www.linkedin.com/learning",
+        "logo": "/images/logos/linkedin.svg",
+
+        "dateStart": "2015-04-01",
+        "dateEnd": "Present",
+
+        "skills": [
+            "React",
+            "Angular",
+            "Node.js",
+            "D3.js",
+            "bash",
+            "Webpack",
+            "REST"
+        ]
+    },
+    {
+        "name": "Pluralsight",
+        "url": "https://www.pluralsight.com/",
+        "logo": "/images/logos/pluralsight.png",
+
+        "dateStart": "2015-04-12",
+        "dateEnd": "2018-04-12",
+
+        "skills": [
+            "JavaScript",
+            "CSS",
+            "Sass",
+            "Less",
+            "BEM",
+            "ASP.NET MVC",
+            "knockout.js"
+        ]
+    },
+    {
+        "name": "Udacity",
+        "url": "https://www.udacity.com/",
+        "logo": "/images/logos/udacity.png",
+
+        "dateStart": "2013-12-01",
+        "dateEnd": "2017-07-24",
+
+        "skills": ["JavaScript", "React", "AJAX"]
+    },
+    {
+        "name": "NJIT",
+        "url": "https://www.njit.edu/",
+        "logo": "/images/logos/weird-njit.jpg",
+
+        "dateStart": "2014-09-01",
+        "dateEnd": "2015-04-01",
+
+        "skills": ["Computer Science", "Web Development"]
+    }
+]
