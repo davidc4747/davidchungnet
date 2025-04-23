@@ -3,9 +3,7 @@
 \*=======================*/
 
 .header {
-    margin: 0 auto;
-    padding: 2rem;
-    max-width: 80%;
+    padding: 2rem 0;
 
     display: grid;
     grid: 1fr 1fr / minmax(auto, 200px) 1fr 1fr;

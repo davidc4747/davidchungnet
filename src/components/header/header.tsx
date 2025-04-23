@@ -4,7 +4,7 @@ import styles from "./header.module.css";
 
 export default component$(() => {
     return (
-        <header class={styles.header}>
+        <header class={[styles.header, "page-container"]}>
             <img
                 class={styles.headshot}
                 src={mypic}
