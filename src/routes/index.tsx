@@ -47,7 +47,7 @@ export default component$(() => {
     });
 
     return (
-        <main>
+        <>
             <Header />
 
             {/* Work Experience */}
@@ -71,10 +71,7 @@ export default component$(() => {
             </h1>
             <Education />
 
-            {/* FAQs */}
-            <Faq />
-
-            {/* Download Button */}
+            {/* Download */}
             <section class={styles.downloadContainer}>
                 <a
                     class={[styles.download, "btn btn--primary"]}
@@ -85,9 +82,16 @@ export default component$(() => {
                 </a>
             </section>
 
+            {/* FAQs */}
+            <h1 class={styles.sectionHeader}>
+                <i class="icon fa fa-compass" />
+                FAQs
+            </h1>
+            <Faq />
+
             {/* Footer */}
             <footer class={styles.footer} />
-        </main>
+        </>
     );
 });
 

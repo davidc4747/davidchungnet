@@ -1,0 +1,34 @@
+[
+    {
+        "question": "What programming languages are you most experienced in?",
+        "answer": "HTML, CSS, JavaScript"
+    },
+    {
+        "question": "Are you familiar with modern JavaScript frameworks?",
+        "answer": "Yes, I have the most experience with React and some practice with Qwik and Elm"
+    },
+    {
+        "question": "What originally got you interested in Computer Science?",
+        "answer": "My high school teacher told me if I work hard I could make video games, and I just keep making stuff after that"
+    },
+    {
+        "question": "What excites you about Web Development?",
+        "answer": "Looking for new Puzzles to Solve, and finding better ways to solve old ones"
+    },
+    {
+        "question": "What do you love the most about programming?",
+        "answer": "With a little blood, sweat, and tears; we can make our ideas a reality"
+    },
+    {
+        "question": "Which project are you most proud? Why?",
+        "answer": "I like the way 'Pick Perfect' and 'Anki Momentum' turned out, but I'd probably still say 'Math Challenge'. It was the first big Web Development projects I worked on front to back. I learned a lot while stubling around in that project, so I'm glad I did it."
+    },
+    {
+        "question": "Do you prefer Front-end, Back-end, or Full-Stack?",
+        "answer": "I've worked as a Full-Stack Developer in the past. They each have insteresting challenges but, the Front-end is where I feel most at home."
+    },
+    {
+        "question": "Are you okay with working as a Full-Stack Developer?",
+        "answer": "Yes, of course! I want to solve problems for the end user. If that means I need to to write Backend code in order to give them a feature then I’ll gladly do it."
+    }
+]
