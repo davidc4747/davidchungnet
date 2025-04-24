@@ -4,8 +4,8 @@
     \*=======================*/
 
     .highlight {
-        color: var(--highlight);
-        font-weight: bold;
+        color: var(--text);
+        /* font-weight: bold; */
     }
 
     .list-unstyled {

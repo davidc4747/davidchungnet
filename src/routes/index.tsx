@@ -1,4 +1,4 @@
-import { $, component$, useStore } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import styles from "./index.module.css";
 
@@ -8,44 +8,7 @@ import Education from "../components/education/education";
 import Faq from "../components/faq/faq";
 import Portfolio from "~/components/portfolio/portfolio";
 
-type Project = {
-    name: string;
-    type: string;
-    dateStart: string;
-    dateEnd: string;
-    github: string;
-    codepen?: string;
-    thumbnail: string;
-    imgs: string[];
-    skills: string[];
-    software: string[];
-    teamSize: number;
-    description: string;
-    details: string[];
-};
-
-type State = {
-    modalIsOpen: boolean;
-    modalProject: Project | null;
-};
-
 export default component$(() => {
-    const state = useStore<State>({
-        modalProject: null,
-        modalIsOpen: false,
-    });
-
-    const closeModal = $(() => {
-        state.modalIsOpen = false;
-        state.modalProject = null;
-    });
-
-    const openModal = $((project: Project): void => {
-        state.modalIsOpen = true;
-        state.modalProject = project;
-        console.log(project);
-    });
-
     return (
         <>
             <Header />
@@ -62,7 +25,7 @@ export default component$(() => {
                 <i class="icon fa fa-code" />
                 Projects
             </h1>
-            <Portfolio onOpenProject$={openModal} />
+            <Portfolio />
 
             {/* Education */}
             <h1 class={styles.sectionHeader}>

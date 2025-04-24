@@ -1,38 +1,44 @@
-import { component$, type QRL } from "@builder.io/qwik";
+import { component$, useSignal } from "@builder.io/qwik";
 import projects from "./portfolio.json";
 import styles from "./portfolio.module.css";
+import ProjectDialog from "../project-dialog/project-dialog";
 
-interface ChildProps {
-    onOpenProject$: QRL<(project: (typeof projects)[number]) => void>;
-}
-export default component$<ChildProps>(({ onOpenProject$ }) => {
+export type Project = (typeof projects)[number];
+
+
+export default component$(() => {
+    const modalProject = useSignal<Project | null>();
+
     return (
-        <ul class={[styles.projectList, "page-container"]}>
-            {projects.map((project, index) => (
-                <li
-                    class={styles.project}
-                    key={index}
-                    onClick$={() => onOpenProject$(project)}
-                >
-                    <h2 class={styles.title}>{project.name}</h2>
-                    <p>
-                        <img
-                            class={[styles.thumbnail, "full-width"]}
-                            src={project.thumbnail}
-                            alt={`${project.name} logo`}
-                            width={100}
-                            height={100}
-                            draggable={false}
-                        />
-                    </p>
-                    <button
-                        class={styles.link}
-                        onClick$={() => onOpenProject$(project)}
-                    >
-                        More &gt;&gt;
-                    </button>
-                </li>
-            ))}
-        </ul>
+        <>
+            <ul class={[styles.projectList, "page-container"]}>
+                {projects.map((project, index) => (
+                    <li class={styles.project} key={index}>
+                        <h2 class={styles.title}>{project.name}</h2>
+                        <p>
+                            <img
+                                class={[styles.thumbnail, "full-width"]}
+                                src={project.thumbnail}
+                                alt={`${project.name} logo`}
+                                width={100}
+                                height={100}
+                                draggable={false}
+                            />
+                        </p>
+                        <button
+                            class={styles.link}
+                            onClick$={() => (modalProject.value = project)}
+                        >
+                            More &gt;&gt;
+                        </button>
+                    </li>
+                ))}
+            </ul>
+
+            <ProjectDialog
+                project={modalProject.value}
+                onClose$={() => (modalProject.value = null)}
+            />
+        </>
     );
 });

@@ -33,13 +33,3 @@
         cursor: pointer;
     }
 }
-
-.link2 {
-    float: right;
-    background-color: transparent;
-    border: none;
-
-    margin-right: auto;
-    color: var(--lowlight);
-    font-size: 0.8rem;
-}

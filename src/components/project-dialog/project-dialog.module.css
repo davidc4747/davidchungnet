@@ -1,0 +1,60 @@
+/* ======================== *\
+    # Project Dialog
+\* ======================== */
+
+.projectDialog {
+    width: 80%;
+    border-radius: 0.5rem;
+
+    color: var(--text);
+    /* background-color: var(--primary); */
+    background-color: var(--background);
+
+    border-color: var(--secondary);
+    /* border: none; */
+
+    &::backdrop {
+        backdrop-filter: blur(10px);
+        background-color: black;
+        opacity: 0.7;
+    }
+}
+
+/* ======================== *\
+    # Content
+\* ======================== */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 2rem;
+    padding: 0.3rem 0;
+
+    width: 100%;
+}
+
+.body {
+    font-size: 1.2rem;
+    padding: 0.9rem 0;
+}
+
+/* ======================== *\
+    # External links
+\* ======================== */
+
+.link {
+    display: inline-block;
+
+    margin: 0.2rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+
+    font-size: 1.8rem;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        color: var(--white);
+    }
+}
