@@ -1,35 +1,8 @@
 @layer components {
-    /*=======================*\
-        #Page Styles
-    \*=======================*/
-
     .page-container {
         display: block;
         margin: 0 auto;
         width: 95%;
         max-width: 1300px;
-    }
-
-    /*=======================*\
-        #Card
-    \*=======================*/
-
-    .card {
-        margin: 0.7rem;
-        padding: 1.3rem;
-        background-color: var(--primary);
-
-        border-radius: 4px;
-    }
-    .card__title {
-        display: flex;
-        align-items: center;
-
-        padding-bottom: 0.6rem;
-        border-bottom: 1px solid var(--grayscale-300);
-    }
-
-    .card__body {
-        padding-top: 0.6rem;
     }
 }

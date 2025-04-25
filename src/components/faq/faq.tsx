@@ -6,9 +6,9 @@ export default component$(() => {
     return (
         <ul class={[styles.faqList, "page-container"]}>
             {faqs.map((faq, index) => (
-                <li class="card" key={index}>
-                    <h2 class="card__title">{faq.question}</h2>
-                    <p class="card__body">{faq.answer}</p>
+                <li class={styles.question} key={index}>
+                    <h2 class={styles.title}>{faq.question}</h2>
+                    <p class={styles.body}>{faq.answer}</p>
                 </li>
             ))}
         </ul>

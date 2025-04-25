@@ -6,3 +6,22 @@
     padding: 0;
     list-style-type: none;
 }
+
+.question {
+    margin: 0.7rem;
+    padding: 1.3rem;
+    background-color: var(--primary);
+
+    border-radius: 4px;
+}
+.title {
+    display: flex;
+    align-items: center;
+
+    padding-bottom: 0.6rem;
+    border-bottom: 1px solid var(--grayscale-300);
+}
+
+.body {
+    padding-top: 0.6rem;
+}
