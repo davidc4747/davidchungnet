@@ -1,20 +1,45 @@
 [
     {
         "company": "PDHI",
-        "title": "Full-Stack Developer",
-        "startDate": "2017-11-15T00:00:00",
-        "endDate": "2017-11-15T00:00:00",
-        "skills": [],
-        "software": [],
-        "details": []
-    },
-    {
-        "company": "Burger King",
-        "title": "Crew Leader",
-        "startDate": "2017-11-15T00:00:00",
-        "endDate": "2017-11-15T00:00:00",
-        "skills": [],
-        "software": [],
-        "details": []
+        "position": "Full-Stack Developer",
+        "startDate": "2016-06-15T00:00:00",
+        "endDate": "2017-09-15T00:00:00",
+        "logo": "/images/pdhi/logo.jpg",
+        "skills": [
+            "HTML5",
+            "CSS3",
+            "Less",
+            "Bootstrap",
+            "JavaScript",
+            "knockout.js",
+            "jQuery",
+            "D3.js",
+            "Node.js",
+            "REST",
+            "SQL",
+            "C#",
+            "ASP.NET",
+            "Agile",
+            "Scrum"
+        ],
+        "software": [
+            "Git",
+            "NPM",
+            "JIRA",
+            "BitBucket",
+            "Confluence",
+            "Visual Studio",
+            "VS Code",
+            "SSMS"
+        ],
+        "details": [
+            "Refactored our JS architecture, allowing the creation of modular knockout components",
+            "Lead the initiative to convert our nested CSS structures into a modular BEM standard",
+            "Helped design and implement the initial stages of our Restful API",
+            "Created interactive charts using Google Maps API and D3.js",
+            "Saved debug time by creating SQL scripts to normalize test data",
+            "Helped reorganized entity framework domain object structure",
+            "Participated in regular agile team workflows"
+        ]
     }
 ]
