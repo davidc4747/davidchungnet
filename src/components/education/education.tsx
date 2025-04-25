@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import schools from "./education.json";
 import styles from "./education.module.css";
+import TagList from "../tag-list/tag-list";
 
 export default component$(() => {
     return (
@@ -21,13 +22,7 @@ export default component$(() => {
                             </a>
 
                             <h3 class={styles.name}>{school.name}</h3>
-                            <ul class="tag-list">
-                                {school.skills.map((skill, index) => (
-                                    <li class="tag" key={index}>
-                                        {skill}
-                                    </li>
-                                ))}
-                            </ul>
+                            <TagList tags={school.skills} />
                         </div>
                     ))}
             </div>

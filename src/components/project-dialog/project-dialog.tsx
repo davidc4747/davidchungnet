@@ -8,6 +8,7 @@ import {
 import styles from "./project-dialog.module.css";
 import { type Project } from "../portfolio/portfolio";
 import ImageCarousel from "../image-carousel/image-carousel";
+import TagList from "../tag-list/tag-list";
 
 /* ======================== *\
     # Project Dialog
@@ -47,7 +48,7 @@ export default component$<ProjectDialogProps>(({ project, onClose$ }) => {
                 </button>
             </h1>
 
-            <ImageCarousel images={project?.imgs ? project.imgs : []} />
+            <ImageCarousel images={project?.imgs ?? []} />
 
             <div class={styles.body}>
                 {project?.description && (
@@ -57,27 +58,8 @@ export default component$<ProjectDialogProps>(({ project, onClose$ }) => {
                     </>
                 )}
 
-                <section class="v-center">
-                    <span class="highlight">Skills:</span>
-                    <ul class="tag-list list-unstyled">
-                        {project?.skills.map((skill, index) => (
-                            <li class="tag" key={index}>
-                                {skill}
-                            </li>
-                        ))}
-                    </ul>
-                </section>
-
-                <section class="v-center">
-                    <span class="highlight">Software:</span>
-                    <ul class="tag-list list-unstyled">
-                        {project?.software.map((soft, index) => (
-                            <li class="tag" key={index}>
-                                {soft}
-                            </li>
-                        ))}
-                    </ul>
-                </section>
+                <TagList title="Skills:" tags={project?.skills ?? []} />
+                <TagList title="Software:" tags={project?.software ?? []} />
 
                 {/* External Links */}
                 <SocialLink
