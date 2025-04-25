@@ -37,7 +37,7 @@ export default component$(() => {
             {/* Download */}
             <section class={styles.downloadContainer}>
                 <a
-                    class={[styles.download, "btn btn--primary"]}
+                    class={styles.download}
                     href="/David-Chung.pdf"
                     target="_blank"
                 >

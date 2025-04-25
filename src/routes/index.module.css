@@ -21,13 +21,17 @@
 
 .download {
     display: inline-block;
-    font-size: 2rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 5px;
 
     color: var(--grayscale-0);
     background-color: var(--highlight);
 
+    font-size: 2rem;
+    transition: scale 250ms ease-out;
+
     &:hover {
-        transform: scale(1.05);
+        scale: 1.05;
     }
 }
 

@@ -1,33 +1,5 @@
 @layer components {
     /*=======================*\
-        #Form
-    \*=======================*/
-
-    .btn {
-        padding: 0.8rem 1.6rem;
-        border: none;
-        border-radius: 5px;
-
-        transition:
-            color 0.25s ease-out,
-            background-color 0.25s ease-out,
-            transform 0.25s ease-out;
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
-
-    .btn--primary {
-        color: var(--text);
-        background-color: var(--primary);
-
-        &:hover {
-            background-color: var(--grayscale-800);
-        }
-    }
-
-    /*=======================*\
         #Page Styles
     \*=======================*/
 
