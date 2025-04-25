@@ -7,11 +7,8 @@
     border-radius: 0.5rem;
 
     color: var(--text);
-    /* background-color: var(--primary); */
     background-color: var(--background);
-
-    border-color: var(--secondary);
-    /* border: none; */
+    border-color: var(--grayscale-800);
 
     &::backdrop {
         backdrop-filter: blur(10px);
@@ -55,6 +52,6 @@
     background-color: rgba(0, 0, 0, 0.1);
 
     &:hover {
-        color: var(--white);
+        color: var(--grayscale-0);
     }
 }

@@ -23,12 +23,10 @@
     display: inline-block;
     font-size: 2rem;
 
-    color: var(--white);
+    color: var(--grayscale-0);
     background-color: var(--highlight);
 
     &:hover {
-        color: var(--white);
-        background-color: var(--highlight);
         transform: scale(1.05);
     }
 }
