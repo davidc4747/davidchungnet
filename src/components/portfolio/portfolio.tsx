@@ -5,7 +5,6 @@ import ProjectDialog from "../project-dialog/project-dialog";
 
 export type Project = (typeof projects)[number];
 
-
 export default component$(() => {
     const modalProject = useSignal<Project | null>();
 
@@ -14,17 +13,15 @@ export default component$(() => {
             <ul class={[styles.projectList, "page-container"]}>
                 {projects.map((project, index) => (
                     <li class={styles.project} key={index}>
-                        <h2 class={styles.title}>{project.name}</h2>
-                        <p>
-                            <img
-                                class={[styles.thumbnail, "full-width"]}
-                                src={project.thumbnail}
-                                alt={`${project.name} logo`}
-                                width={100}
-                                height={100}
-                                draggable={false}
-                            />
-                        </p>
+                        <h2>{project.name}</h2>
+                        <img
+                            class={styles.thumbnail}
+                            src={project.thumbnail}
+                            alt={`${project.name} logo`}
+                            width={420}
+                            height={300}
+                            draggable={false}
+                        />
                         <button
                             class={styles.link}
                             onClick$={() => (modalProject.value = project)}

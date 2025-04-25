@@ -4,31 +4,39 @@
 
 .projectList {
     display: grid;
+    gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     align-items: center;
+    justify-content: space-between;
 
-    list-style-type: none;
     padding: 0;
+    list-style-type: none;
 }
 
 .project {
-    margin: 1.1rem 0.9rem;
-    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
 }
 
+/* ------------------------ *\
+    # Body 
+\* ------------------------ */
+
 .title {
-    padding-bottom: 0.4rem;
 }
 
 .thumbnail {
-    height: 300px;
+    width: 100%;
+
     object-fit: contain;
-    border-radius: 4px;
     background-color: var(--primary);
+    border-radius: 4px;
 }
 
 .link {
-    float: right;
+    align-self: end;
+
     &:hover {
         cursor: pointer;
     }
