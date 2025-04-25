@@ -7,6 +7,7 @@ import {
 } from "@builder.io/qwik";
 import styles from "./project-dialog.module.css";
 import { type Project } from "../portfolio/portfolio";
+import ImageCarousel from "../image-carousel/image-carousel";
 
 /* ======================== *\
     # Project Dialog
@@ -26,21 +27,35 @@ export default component$<ProjectDialogProps>(({ project, onClose$ }) => {
     });
 
     return (
-        <dialog ref={dialog} class={styles.projectDialog} onClose$={onClose$}>
+        <dialog
+            ref={dialog}
+            class={styles.projectDialog}
+            onClick$={(e) => {
+                if (e.target === dialog.value) {
+                    dialog.value.close();
+                }
+            }}
+            onClose$={onClose$}
+        >
             <h1 class={styles.header}>
                 {project?.name}
-                <button onClick$={() => dialog.value?.close()}>
+                <button
+                    onClick$={() => dialog.value?.close()}
+                    aria-label="Close Project Modal"
+                >
                     <i class="icon fa fa-times" />
                 </button>
             </h1>
 
-            <div>
-                {/* <ImageCarousel images={project?.imgs ? project?.imgs : []} /> */}
-            </div>
-            
+            <ImageCarousel images={project?.imgs ? project.imgs : []} />
+
             <div class={styles.body}>
-                <span class="highlight">Description: </span>
-                {project?.description}
+                {project?.description && (
+                    <>
+                        <span class="highlight">Description: </span>
+                        {project.description}
+                    </>
+                )}
 
                 <section class="v-center">
                     <span class="highlight">Skills:</span>

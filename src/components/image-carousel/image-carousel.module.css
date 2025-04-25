@@ -1,0 +1,68 @@
+/* ======================== *\
+    # Main Image
+\* ======================== */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.main {
+    grid-area: 1 / 1 / span 1 / span 3;
+    display: block;
+    margin: 0 auto;
+
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* ------------------------ *\
+    # Buttons
+\* ------------------------ */
+
+.prev,
+.next {
+    opacity: 0.05;
+    transition: 250ms ease-out opacity;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+}
+.prev {
+    grid-area: 1 / 1;
+}
+.next {
+    grid-row: 1;
+    grid-column: -2 / -1;
+}
+
+/* ======================== *\
+    # Image list
+\* ======================== */
+
+.imageList {
+    padding: 0.8rem 0;
+    margin: 0;
+
+    display: flex;
+    overflow: auto;
+
+    list-style-type: none;
+}
+.image {
+    display: inline-block;
+    padding: 0.25rem;
+    border: 2px solid transparent;
+    object-fit: contain;
+
+    &.selected {
+        border: 2px solid var(--grayscale-300);
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
