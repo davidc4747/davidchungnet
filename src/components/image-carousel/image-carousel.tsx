@@ -67,23 +67,26 @@ export default component$<ImageCarouselProps>(({ images }) => {
             </div>
 
             {/* Image List */}
-            <div class={styles.imageList}>
-                {images.map((img, index) => (
-                    <img
-                        key={img}
-                        class={{
-                            [styles.image]: true,
-                            [styles.selected]: index == currentImageIndex.value,
-                        }}
-                        draggable={false}
-                        src={img}
-                        alt=""
-                        width={110}
-                        height={80}
-                        onClick$={() => (currentImageIndex.value = index)}
-                    />
-                ))}
-            </div>
+            {images.length > 1 && (
+                <div class={styles.imageList}>
+                    {images.map((img, index) => (
+                        <img
+                            key={img}
+                            class={{
+                                [styles.image]: true,
+                                [styles.selected]:
+                                    index == currentImageIndex.value,
+                            }}
+                            draggable={false}
+                            src={img}
+                            alt=""
+                            width={110}
+                            height={80}
+                            onClick$={() => (currentImageIndex.value = index)}
+                        />
+                    ))}
+                </div>
+            )}
         </>
     );
 });

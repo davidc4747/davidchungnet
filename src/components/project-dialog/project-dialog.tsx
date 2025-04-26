@@ -52,10 +52,10 @@ export default component$<ProjectDialogProps>(({ project, onClose$ }) => {
 
             <div class={styles.body}>
                 {project?.description && (
-                    <>
+                    <p>
                         <span class="highlight">Description: </span>
                         {project.description}
-                    </>
+                    </p>
                 )}
 
                 <TagList title="Skills:" tags={project?.skills ?? []} />

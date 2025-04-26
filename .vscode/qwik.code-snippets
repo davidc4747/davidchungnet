@@ -30,13 +30,13 @@
   },
   "Qwik signal": {
     "scope": "javascriptreact,typescriptreact",
-    "prefix": "quseSignal",
+    "prefix": ["qsig","quseSignal"],
     "description": "useSignal() declaration",
     "body": ["const ${1:foo} = useSignal($2);", "$0"],
   },
   "Qwik store": {
     "scope": "javascriptreact,typescriptreact",
-    "prefix": "quseStore",
+    "prefix": ["qstore","quseStore"],
     "description": "useStore() declaration",
     "body": ["const ${1:state} = useStore({", "  $2", "});", "$0"],
   },
@@ -48,13 +48,13 @@
   },
   "useVisibleTask": {
     "scope": "javascriptreact,typescriptreact",
-    "prefix": "quseVisibleTask",
+    "prefix": ["qtaskvis", "quseVisibleTask"],
     "description": "useVisibleTask$() function hook",
     "body": ["useVisibleTask$(({ track }) => {", "  $0", "});", ""],
   },
   "useTask": {
     "scope": "javascriptreact,typescriptreact",
-    "prefix": "quseTask$",
+    "prefix": ["qtask", "quseTask$"],
     "description": "useTask$() function hook",
     "body": [
       "useTask$(({ track }) => {",
