@@ -1,4 +1,5 @@
 import {
+    $,
     component$,
     useTask$,
     useVisibleTask$,
@@ -12,6 +13,8 @@ import styles from "./image-carousel.module.css";
 
 interface ImageCarouselProps {
     images: string[];
+    // onNextImage: Function;
+    // onPrevImage: Function;
 }
 export default component$<ImageCarouselProps>(({ images }) => {
     const currentImageIndex = useSignal(1);
@@ -30,8 +33,30 @@ export default component$<ImageCarouselProps>(({ images }) => {
         selected?.scrollIntoView({ behavior: "smooth", inline: "center" });
     });
 
+    const next = $(
+        () =>
+            (currentImageIndex.value =
+                (currentImageIndex.value + 1) % images.length)
+    );
+    const prev = $(
+        () =>
+            (currentImageIndex.value =
+                (currentImageIndex.value - 1 + images.length) % images.length)
+    );
+
+    const handleKeyPress = $((e: KeyboardEvent) => {
+        switch (e.key) {
+            case "ArrowLeft":
+                prev();
+                break;
+            case "ArrowRight":
+                next();
+                break;
+        }
+    });
+
     return (
-        <>
+        <section onKeyUp$={handleKeyPress}>
             <div class={styles.container}>
                 {/* Image List */}
                 <img
@@ -45,22 +70,17 @@ export default component$<ImageCarouselProps>(({ images }) => {
                 {/* Next & Prev */}
                 <button
                     class={styles.prev}
-                    onClick$={() =>
-                        (currentImageIndex.value =
-                            (currentImageIndex.value - 1 + images.length) %
-                            images.length)
-                    }
-                    aria-label="Display Previous Image"
+                    onClick$={prev}
+                    aria-label="Previous Image"
+                    title="Previous Image (←)"
                 >
                     <i class="fa fa-angle-left" />
                 </button>
                 <button
                     class={styles.next}
-                    onClick$={() =>
-                        (currentImageIndex.value =
-                            (currentImageIndex.value + 1) % images.length)
-                    }
-                    aria-label="Display Next Image"
+                    onClick$={next}
+                    aria-label="Next Image"
+                    title="Next Image (→)"
                 >
                     <i class="fa fa-angle-right" />
                 </button>
@@ -87,6 +107,6 @@ export default component$<ImageCarouselProps>(({ images }) => {
                     ))}
                 </div>
             )}
-        </>
+        </section>
     );
 });
