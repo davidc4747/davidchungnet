@@ -54,9 +54,13 @@
     border-radius: 6px;
 
     font-size: 1.8rem;
-    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--grayscale-0);
+    background-color: var(--grayscale-800);
+    transition: background-color 200ms ease-out;
 
-    &:hover {
-        color: var(--grayscale-0);
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        background-color: var(--black);
     }
 }

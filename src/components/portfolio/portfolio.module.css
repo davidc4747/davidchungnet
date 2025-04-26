@@ -37,7 +37,17 @@
 .link {
     align-self: end;
 
-    &:hover {
+    border: none;
+    padding: 0.4rem 0.6rem;
+    border-radius: 4px;
+
+    color: var(--grayscale-0);
+    background-color: transparent;
+    transition: background-color 200ms ease-out;
+
+    &:hover,
+    &:focus {
         cursor: pointer;
+        background-color: var(--primary);
     }
 }

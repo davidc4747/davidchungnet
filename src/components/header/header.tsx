@@ -24,29 +24,35 @@ export default component$(() => {
                         <i class="fab fa-twitter" />
                     </a>
                 </li> */}
-                <li class={[styles.socialItem, "icon"]}>
+                <li>
                     <a
+                        class={[styles.socialItem, "icon"]}
                         target="_blank"
                         rel="nofollow"
                         href="https://github.com/davidc4747"
+                        aria-label="Github"
                     >
                         <i class="fab fa-github" />
                     </a>
                 </li>
-                <li class={[styles.socialItem, "icon"]}>
+                <li>
                     <a
+                        class={[styles.socialItem, "icon"]}
                         target="_blank"
                         rel="nofollow"
                         href="https://codepen.io/davidc4747/"
+                        aria-label="Codepen"
                     >
                         <i class="fab fa-codepen" />
                     </a>
                 </li>
-                <li class={[styles.socialItem, "icon"]}>
+                <li>
                     <a
+                        class={[styles.socialItem, "icon"]}
                         target="_blank"
                         rel="nofollow"
                         href="https://www.linkedin.com/in/davidc4747/"
+                        aria-label="Linkedin"
                     >
                         <i class="fab fa-linkedin-in" />
                     </a>

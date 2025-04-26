@@ -25,13 +25,16 @@
     border-radius: 5px;
 
     color: var(--grayscale-0);
-    background-color: var(--highlight);
+    background-color: var(--black);
+    border: 1px solid transparent;
 
     font-size: 2rem;
-    transition: scale 250ms ease-out;
+    transition: border 150ms ease-out;
 
-    &:hover {
-        scale: 1.05;
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        border: 1px solid var(--grayscale-300);
     }
 }
 

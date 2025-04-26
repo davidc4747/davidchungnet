@@ -46,16 +46,22 @@
     display: flex;
     justify-content: flex-end;
     align-self: end;
+    gap: 0.5rem;
 }
 
 .socialItem {
-    margin: 0.3rem 0.8rem;
-    font-size: 1.3rem;
-    transition: color 0.2s ease-out;
+    margin: 0;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
 
-    &:hover {
+    font-size: 1.8rem;
+    color: var(--grayscale-0);
+    transition: background-color 200ms ease-out;
+
+    &:hover,
+    &:focus {
         cursor: pointer;
-        color: var(--highlight);
+        background-color: var(--primary);
     }
 }
 
