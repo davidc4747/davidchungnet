@@ -11,25 +11,27 @@ export default component$(() => {
     return (
         <>
             <ul class={[styles.projectList, "page-container"]}>
-                {projects.map((project, index) => (
-                    <li class={styles.project} key={index}>
-                        <h2>{project.name}</h2>
-                        <img
-                            class={styles.thumbnail}
-                            src={project.thumbnail}
-                            alt={`${project.name} logo`}
-                            width={420}
-                            height={300}
-                            draggable={false}
-                        />
-                        <button
-                            class={styles.link}
-                            onClick$={() => (modalProject.value = project)}
-                        >
-                            More &gt;&gt;
-                        </button>
-                    </li>
-                ))}
+                {projects
+                    .filter((p) => p.display)
+                    .map((project, index) => (
+                        <li class={styles.project} key={index}>
+                            <h2>{project.name}</h2>
+                            <img
+                                class={styles.thumbnail}
+                                src={project.thumbnail ?? project.imgs[0]}
+                                alt={`${project.name} logo`}
+                                width={420}
+                                height={300}
+                                draggable={false}
+                            />
+                            <button
+                                class={styles.link}
+                                onClick$={() => (modalProject.value = project)}
+                            >
+                                More &gt;&gt;
+                            </button>
+                        </li>
+                    ))}
             </ul>
 
             <ProjectDialog

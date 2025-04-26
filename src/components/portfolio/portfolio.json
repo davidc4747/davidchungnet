@@ -1,5 +1,102 @@
 [
     {
+        "display": true,
+        "name": "Anki DeepL",
+        "type": "Anki Addon",
+        "dateStart": "2024-09-03",
+        "dateEnd": "2025-04-16",
+        "github": "https://github.com/davidc4747/Anki-DeepL",
+        "teamSize": 1,
+        "description": "Automatically translates Anki cards using DeepL API",
+        "imgs": ["/images/anki-deepl/anki_gCGwYGtTKh.png"],
+        "skills": ["Python", "PyQt6"],
+        "software": ["VS Code", "Git", "GitHub"],
+        "details": []
+    },
+    {
+        "display": false,
+        "name": "Vocab Vault",
+        "type": "Tauri App",
+        "dateStart": "2024-08-20",
+        "dateEnd": "2024-09-05",
+        "github": "https://github.com/davidc4747/vocab-vault",
+        "teamSize": 1,
+        "description": "Helps generate a known-morphs file for AnkiMorphs",
+        "imgs": [
+            "/images/vocab-vault/shot1.png",
+            "/images/vocab-vault/shot2.png",
+            "/images/vocab-vault/shot3.png"
+        ],
+        "skills": ["Rust", "TypeScript", "CSS", "HTML", "REST"],
+        "software": ["VS Code", "Git", "GitHub", "Figma"],
+        "details": []
+    },
+    {
+        "display": true,
+        "name": "Anki Momentum",
+        "type": "Anki Addon",
+        "dateStart": "2023-10-15",
+        "dateEnd": "2024-07-12",
+        "github": "https://github.com/davidc4747/Anki-Momentum",
+        "teamSize": 1,
+        "description": "Anki Addon that tries to display stats that encourage you to compete with yourself, and keep studying",
+        "thumbnail": "/images/anki-momentum/personalBest.png",
+        "imgs": [
+            "/images/anki-momentum/anki_iZsNisg8Tn.png",
+            "/images/anki-momentum/personalBest.png"
+        ],
+        "skills": ["D3.js", "TypeScript", "CSS", "HTML", "Python"],
+        "software": ["VS Code", "Git", "GitHub"],
+        "details": []
+    },
+    {
+        "display": true,
+        "name": "FFTools",
+        "type": "Tauri App",
+        "dateStart": "2023-06-18",
+        "dateEnd": "2023-07-16",
+        "github": "https://github.com/davidc4747/ff-tools",
+        "teamSize": 1,
+        "description": "Quick tool for some ffmpeg commands",
+        "thumbnail": "/images/fftools/ffaudio.png",
+        "imgs": [
+            "/images/fftools/ffgif.png",
+            "/images/fftools/ffmin.png",
+            "/images/fftools/ffaudio.png"
+        ],
+        "skills": ["Qwik", "Tauri", "Rust", "ffmpeg", "TypeScript"],
+        "software": ["VS Code", "Git", "GitHub"],
+        "details": []
+    },
+    {
+        "display": true,
+        "name": "Pick Perfect",
+        "type": "Electron App",
+        "dateStart": "2023-03-12",
+        "dateEnd": "2023-06-10",
+        "github": "https://github.com/davidc4747/pick-perfect",
+        "teamSize": 1,
+        "description": "Automates League of Legends Champion Select so you can step away",
+        "imgs": [
+            "/images/pick-perfect/view.png",
+            "/images/pick-perfect/select.png",
+            "/images/pick-perfect/settings.png",
+            "/images/pick-perfect/keybinds.png"
+        ],
+        "skills": [
+            "React",
+            "Electron",
+            "TypeScript",
+            "CSS",
+            "HTML",
+            "REST",
+            "WebSockets"
+        ],
+        "software": ["VS Code", "Git", "GitHub"],
+        "details": []
+    },
+    {
+        "display": false,
         "name": "ResponsiveGif",
         "type": "Electron App",
         "dateStart": "2018-03-01",
@@ -16,9 +113,8 @@
             "/images/responsivegif/ex4.gif"
         ],
         "skills": [
-            "HTML5",
-            "HTML5 Canvas",
-            "CSS3",
+            "Canvas",
+            "CSS",
             "JavaScript",
             "GSAP",
             "NodeJS",
@@ -27,7 +123,7 @@
         ],
         "software": ["Visual Studio Code", "Git", "GitHub"],
         "teamSize": 1,
-        "description": "Create a gif of your webpage to helps analyze your responsive design",
+        "description": "Create a gif of your webpage to show off your responsive design",
         "details": [
             "Captured images and used JavaScript to stitched them into a gif",
             "Used Electrons event system to manage state between windows",
@@ -35,6 +131,7 @@
         ]
     },
     {
+        "display": true,
         "name": "Dark Sky",
         "type": "Web Game",
         "dateStart": "2018-03-01",
@@ -54,17 +151,18 @@
             "/images/darksky/2018-03-24 10-45-35351.png",
             "/images/darksky/2018-03-24 10-45-35425.png"
         ],
-        "skills": ["HTML5", "HTML5 Canvas", "CSS3", "JavaScript", "GSAP"],
+        "skills": ["Canvas", "CSS", "JavaScript", "GSAP"],
         "software": ["Visual Studio Code", "Git", "GitHub"],
         "teamSize": 1,
         "description": "A game about spaceships fighting in the dark",
         "details": [
             "Built completely with vanilla JavaScript",
-            "Generated lighting effects using html5 canvas ‘compositeOpertation’",
+            "Generated lighting effects using html canvas ‘compositeOpertation’",
             "Created subtle light animations use the GreenSock library"
         ]
     },
     {
+        "display": true,
         "name": "PDHI",
         "type": "Website",
         "dateStart": "2016-06-01",
@@ -80,8 +178,6 @@
             "/images/pdhi/PeerGroup/PG-Header-v2.png"
         ],
         "skills": [
-            "HTML5",
-            "CSS3",
             "Less",
             "Bootstrap",
             "JavaScript",
@@ -89,7 +185,7 @@
             "jQuery",
             "D3.js",
             "Node.js",
-            "Restful APIs",
+            "REST",
             "SQL",
             "C#",
             "ASP.NET",
@@ -111,6 +207,7 @@
         "details": []
     },
     {
+        "display": false,
         "name": "CareerClue",
         "type": "Website",
         "dateStart": "2015-07-01",
@@ -127,8 +224,8 @@
             "/images/careerclue/pic (7).png"
         ],
         "skills": [
-            "HTML5",
-            "CSS3",
+            "HTML",
+            "CSS",
             "Sass",
             "JavaScript",
             "AngularJS",
@@ -141,6 +238,7 @@
         "details": ["", ""]
     },
     {
+        "display": true,
         "name": "MathChallenge",
         "type": "Website",
         "dateStart": "2015-03-01",
@@ -167,7 +265,7 @@
         ],
         "skills": [
             "HTML",
-            "CSS3",
+            "CSS",
             "Sass",
             "JavaScript",
             "AngularJS",
@@ -177,15 +275,16 @@
         ],
         "software": ["Sublime Text", "Balsamiq", "Git", "GitHub", "Grunt.js"],
         "teamSize": 1,
-        "description": "Math Challenge is a fun, simple, and addictive math game.",
+        "description": "Fun, simple, and addictive math game.",
         "details": [
             "Built a RPC API to allow data to be requested and displayed with AngularJS",
             "Recorded and stored all game data to a MySql database",
             "Graded the user’s game data through several MySql Views",
-            "Created a simple and responsive design using CSS3 properties and media queries"
+            "Created a simple and responsive design using CSS properties and media queries"
         ]
     },
     {
+        "display": true,
         "name": "CKB Horror",
         "type": "Windows Game",
         "dateStart": "2014-10-01",
@@ -208,6 +307,7 @@
         "details": ["Implemented class hierarchy for game objects and menus"]
     },
     {
+        "display": false,
         "name": "Tow Def",
         "type": "Windows Game",
         "dateStart": "2015-01-01",
@@ -242,6 +342,7 @@
         ]
     },
     {
+        "display": false,
         "name": "Fhysics",
         "type": "Windows Game",
         "dateStart": "2014-02-01",
@@ -284,6 +385,7 @@
         ]
     },
     {
+        "display": false,
         "name": "Adlez",
         "type": "Windows Game",
         "dateStart": "2013-09-01",
@@ -315,6 +417,7 @@
         ]
     },
     {
+        "display": true,
         "name": "MrSpotswood",
         "type": "Windows Form",
         "dateStart": "2013-03-01",
