@@ -8,7 +8,7 @@ export default component$(() => {
             <img
                 class={styles.headshot}
                 src={mypic}
-                alt="Image of David Chung"
+                alt="Photo of David Chung"
                 width={200}
                 height={200}
             />

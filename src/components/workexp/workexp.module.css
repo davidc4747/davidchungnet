@@ -3,8 +3,12 @@
 \*========================*/
 
 .workexp {
-    width: 50%;
+    max-width: 900px;
     margin: 0 auto;
+
+    @media (width <= 1000px) {
+        width: 90%;
+    }
 }
 
 .job {
@@ -30,8 +34,6 @@
     border: 1px solid var(--primary);
 
     flex: 0;
-    width: 30%;
-    max-width: 100px;
 }
 
 /*-------------------------*\

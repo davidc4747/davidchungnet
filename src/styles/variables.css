@@ -17,5 +17,5 @@
 
     --background: light-dark(var(--grayscale-50), #293036); /* #323a41 */
     --primary: light-dark(var(--grayscale-100), #1e2327);
-    --highlight: light-dark(#2547aa, #02004a);
+    --highlight: light-dark(#2547aa, var(--black));
 }
