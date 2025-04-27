@@ -30,7 +30,7 @@ export default component$(() => {
                         target="_blank"
                         rel="nofollow"
                         href="https://github.com/davidc4747"
-                        aria-label="Github"
+                        aria-label="David's Github"
                     >
                         <i class="fab fa-github" />
                     </a>
@@ -41,7 +41,7 @@ export default component$(() => {
                         target="_blank"
                         rel="nofollow"
                         href="https://codepen.io/davidc4747/"
-                        aria-label="Codepen"
+                        aria-label="David's Codepen"
                     >
                         <i class="fab fa-codepen" />
                     </a>
@@ -52,7 +52,7 @@ export default component$(() => {
                         target="_blank"
                         rel="nofollow"
                         href="https://www.linkedin.com/in/davidc4747/"
-                        aria-label="Linkedin"
+                        aria-label="David's Linkedin"
                     >
                         <i class="fab fa-linkedin-in" />
                     </a>

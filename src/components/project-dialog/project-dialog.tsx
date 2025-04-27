@@ -38,19 +38,19 @@ export default component$<ProjectDialogProps>(({ project, onClose$ }) => {
             }}
             onClose$={onClose$}
         >
-            <h1 class={styles.header}>
-                {project?.name}
+            <section class={styles.header}>
+                <h3>{project?.name}</h3>
                 <button
                     onClick$={() => dialog.value?.close()}
-                    aria-label="Close Project Modal"
+                    aria-label="close dialog"
                 >
                     <i class="icon fa fa-times" />
                 </button>
-            </h1>
+            </section>
 
             <ImageCarousel images={project?.imgs ?? []} />
 
-            <div class={styles.body}>
+            <section class={styles.body}>
                 {project?.description && (
                     <p>
                         <span class="highlight">Description: </span>
@@ -65,11 +65,13 @@ export default component$<ProjectDialogProps>(({ project, onClose$ }) => {
                 <SocialLink
                     icon="github"
                     href={project?.github}
+                    projectName={project?.name}
                     class={styles.link}
                 />
                 <SocialLink
                     icon="codepen"
                     href={project?.codepen}
+                    projectName={project?.name}
                     class={styles.link}
                 />
                 {/* <SocialLink
@@ -77,7 +79,7 @@ export default component$<ProjectDialogProps>(({ project, onClose$ }) => {
                     href={project?.youtube}
                     class={styles.link}
                 /> */}
-            </div>
+            </section>
         </dialog>
     );
 });
@@ -88,11 +90,12 @@ export default component$<ProjectDialogProps>(({ project, onClose$ }) => {
 
 type SocialLinkProps = {
     icon: "github" | "youtube" | "codepen";
+    projectName?: string;
     href?: string;
     class?: DOMAttributes<HTMLAnchorElement>["class"];
 };
 export const SocialLink = component$<SocialLinkProps>(
-    ({ icon, href, ...props }) => {
+    ({ icon, href, projectName, ...props }) => {
         return (
             href && (
                 <a
@@ -100,6 +103,7 @@ export const SocialLink = component$<SocialLinkProps>(
                     rel="nofollow"
                     href={href}
                     class={props.class}
+                    aria-label={`${projectName ?? "project"}'s ${icon}`}
                 >
                     <i class={`fab fa-${icon}`} />
                 </a>

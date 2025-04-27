@@ -27,6 +27,7 @@ export default component$(() => {
                             <button
                                 class={styles.link}
                                 onClick$={() => (modalProject.value = project)}
+                                aria-label={`Show more about ${project.name}`}
                             >
                                 More &gt;&gt;
                             </button>

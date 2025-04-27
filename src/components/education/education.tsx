@@ -11,7 +11,12 @@ export default component$(() => {
                     .filter((s) => s.name != "Udacity")
                     .map((school, index) => (
                         <div class={styles.school} key={index}>
-                            <a href={school.url} target="_blank" rel="nofollow">
+                            <a
+                                href={school.url}
+                                target="_blank"
+                                rel="nofollow"
+                                aria-label={school.name}
+                            >
                                 <img
                                     class={styles.logo}
                                     src={`${school.logo}`}

@@ -71,7 +71,6 @@ export default component$<ImageCarouselProps>(({ images }) => {
                 <button
                     class={styles.prev}
                     onClick$={prev}
-                    aria-label="Previous Image"
                     title="Previous Image (←)"
                 >
                     <i class="fa fa-angle-left" />
@@ -79,7 +78,6 @@ export default component$<ImageCarouselProps>(({ images }) => {
                 <button
                     class={styles.next}
                     onClick$={next}
-                    aria-label="Next Image"
                     title="Next Image (→)"
                 >
                     <i class="fa fa-angle-right" />
