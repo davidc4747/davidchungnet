@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 import Header from "../components/header/header";
 import Workexp from "../components/workexp/workexp";
 import Education from "../components/education/education";
-import Faq from "../components/faq/faq";
+// import Faq from "../components/faq/faq";
 import Portfolio from "~/components/portfolio/portfolio";
 
 export default component$(() => {
@@ -46,11 +46,11 @@ export default component$(() => {
             </section>
 
             {/* FAQs */}
-            <h1 class={styles.sectionHeader}>
+            {/* <h1 class={styles.sectionHeader}>
                 <i class="icon fa fa-compass" />
                 FAQs
             </h1>
-            <Faq />
+            <Faq /> */}
 
             {/* Footer */}
             <footer class={styles.footer} />
