@@ -27,8 +27,8 @@
             "/images/vocab-vault/shot2.png",
             "/images/vocab-vault/shot3.png"
         ],
-        "skills": ["Rust", "TypeScript", "CSS", "HTML", "REST"],
-        "software": ["VS Code", "Git", "GitHub", "Figma"],
+        "skills": ["Rust", "TypeScript", "CSS", "REST"],
+        "software": ["VS Code", "Figma", "Git", "GitHub"],
         "details": []
     },
     {
@@ -45,7 +45,7 @@
             "/images/anki-momentum/anki_iZsNisg8Tn.png",
             "/images/anki-momentum/personalBest.png"
         ],
-        "skills": ["D3.js", "TypeScript", "CSS", "HTML", "Python"],
+        "skills": ["D3.js", "TypeScript", "CSS", "Python"],
         "software": ["VS Code", "Git", "GitHub"],
         "details": []
     },
@@ -65,7 +65,7 @@
             "/images/fftools/ffaudio.png"
         ],
         "skills": ["Qwik", "Tauri", "Rust", "ffmpeg", "TypeScript"],
-        "software": ["VS Code", "Git", "GitHub"],
+        "software": ["VS Code", "Figma", "Git", "GitHub"],
         "details": []
     },
     {
@@ -88,9 +88,11 @@
             "Electron",
             "TypeScript",
             "CSS",
-            "HTML",
             "REST",
-            "WebSockets"
+            "Cypress",
+            "WebSockets",
+            "NodeJS",
+            "Riot API"
         ],
         "software": ["VS Code", "Git", "GitHub"],
         "details": []

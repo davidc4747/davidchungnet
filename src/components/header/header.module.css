@@ -3,7 +3,8 @@
 \*=======================*/
 
 .header {
-    margin: 3rem auto;
+    margin: 0 auto;
+    padding: 3rem 0;
 
     display: grid;
     gap: 0.8rem;

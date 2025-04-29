@@ -38,7 +38,7 @@ export default component$(() => {
             <section class={styles.downloadContainer}>
                 <a
                     class={styles.download}
-                    href="/David-Chung.pdf"
+                    href="/DavidGChung.pdf"
                     target="_blank"
                 >
                     Download Resume

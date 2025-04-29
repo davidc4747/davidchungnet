@@ -15,15 +15,6 @@ export default component$(() => {
 
             <h1 class={styles.myName}>David Chung</h1>
             <ul class={[styles.social, "list-unstyled"]}>
-                {/* <li class={[socialItem, "icon"]}>
-                    <a
-                        target="_blank"
-                        rel="nofollow"
-                        href="https://twitter.com/davidc4747"
-                    >
-                        <i class="fab fa-twitter" />
-                    </a>
-                </li> */}
                 <li>
                     <a
                         class={[styles.socialItem, "icon"]}
@@ -60,14 +51,6 @@ export default component$(() => {
             </ul>
 
             <ul class={["list-unstyled", styles.contact]}>
-                <li class={styles.contactItem}>
-                    <span class="icon fa fa-phone" />
-                    (908) 930 - 8054
-                </li>
-                <li class={styles.contactItem}>
-                    <span class="icon fa fa-envelope" />
-                    davidc4747@yahoo.com
-                </li>
                 <li class={styles.contactItem}>
                     <span class="icon fa fa-map-marker" />
                     San Francisco, CA
